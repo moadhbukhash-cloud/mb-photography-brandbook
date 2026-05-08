@@ -1148,3 +1148,42 @@ h3.sub-title {
   /* Make sure sys-group-label and surface-cat-label still readable */
   .sys-group-label, .surface-cat-label { font-size: 9px !important; }
 }
+
+
+/* ============================================================
+   FONT USAGE OVERRIDE — added 2026-05-08
+   Inter is primary across all UI labels, eyebrows, captions, footers.
+   JetBrains Mono is reserved for: GPS coords, EXIF data, edition fractions,
+   format specs (e.g. "9:16 · 1080 × 1920"), hex codes, file paths.
+   ============================================================ */
+.mono {
+  font-family: var(--font-sans) !important;
+  font-weight: 500;
+}
+
+/* .tech — apply explicitly to technical content that needs monospace fixed-width */
+.tech, .tech.mono,
+.format-meta, .ed-num, .ed-rule-key, .bc-back-meta, .bc-back-url,
+.pacing-num, .reel-meta, .ps-num, .stat-num,
+.ph-hero-cap, .light-image-cap, .frame-image-cap, .story-hero-cap,
+.format-note,
+[data-tech] {
+  font-family: var(--font-mono) !important;
+}
+
+/* Color page hex codes — always JetBrains */
+.swatch-hex, .swatch-name, .palette-hex,
+[class*="hex"], [class*="-hex"] {
+  font-family: var(--font-mono);
+}
+
+/* ============================================================
+   COLOR PALETTE — consistent layout, hairline border on every swatch,
+   labels always BELOW the swatch (not inside)
+   ============================================================ */
+.swatch, .swatch-stack, .palette-swatch, [class*="swatch"] > div {
+  border: var(--rule);
+}
+.palette-swatch, .swatch {
+  background-clip: padding-box;
+}
