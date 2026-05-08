@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Layout — MB Photography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/system.css" />
+</head>
+<body data-page="layout" data-group="frame">
+
+<div class="site">
+
+  <header class="topbar">
+    <a href="index.html" class="brand">
+      <img src="assets/monogram-black.svg" alt="MB" />
+      <span class="divider"></span>
+      <span class="label">Brand System</span>
+    </a>
+    <nav class="nav-primary">
+      <a href="index.html" data-page="index">Overview</a>
+      <a href="story.html" data-group="expression">Expression</a>
+      <a href="logo.html" data-group="form">Form</a>
+      <a href="layout.html" data-group="frame">Frame</a>
+      <a href="production.html" data-group="practice">Practice</a>
+    </nav>
+    <span class="meta">— Layout</span>
+  </header>
+  <nav class="nav-secondary" data-group="frame">
+    <a href="layout.html" data-page="layout">Layout</a>
+    <a href="motion.html" data-page="motion">Motion</a>
+  </nav>
+  <div class="progress"></div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="stack">
+          <div>
+            <div class="eyebrow framed" style="margin-bottom: var(--s-6);">— Layout</div>
+            <h1 class="display">Where things sit,<br/>and how they behave.</h1>
+          </div>
+          <div>
+            <p class="lead">
+              The grid decides positions; the components decide what fills them.
+              Both follow the same discipline as the rest of the brand — structure clear enough
+              to look like decoration, ornament that turns out to be architecture.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRID DIVIDER -->
+    <section class="section section-divider">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Grid</div>
+            <h2 class="section-title">Where things sit.</h2>
+          </div>
+          <p class="desc">
+            Twelve columns and an eight-pixel rhythm. Every page on this system, every printed
+            piece, every collateral object sits on this scaffold.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 col grid demo -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Twelve columns</div>
+            <h2 class="section-title">The base grid.</h2>
+          </div>
+          <p class="desc">
+            Twelve columns, equal width, with a 24-pixel gutter. Editorial layouts subdivide into 4-4-4
+            (triptych), 8-4 (lead + side), or 5-7 (asymmetric pair).
+          </p>
+        </div>
+
+        <div class="gridboard">
+          <div class="gb-cols">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="gb-overlay">
+            <div class="gb-block" style="grid-column: 1 / span 4;"><span class="mono">4</span></div>
+            <div class="gb-block" style="grid-column: 5 / span 4;"><span class="mono">4</span></div>
+            <div class="gb-block" style="grid-column: 9 / span 4;"><span class="mono">4</span></div>
+
+            <div class="gb-block" style="grid-column: 1 / span 8;"><span class="mono">8</span></div>
+            <div class="gb-block" style="grid-column: 9 / span 4;"><span class="mono">4</span></div>
+
+            <div class="gb-block" style="grid-column: 1 / span 5;"><span class="mono">5</span></div>
+            <div class="gb-block" style="grid-column: 6 / span 7;"><span class="mono">7</span></div>
+
+            <div class="gb-block" style="grid-column: 1 / span 12;"><span class="mono">12 — full</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPACING SCALE -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Spacing</div>
+            <h2 class="section-title">Eight-pixel rhythm.</h2>
+          </div>
+          <p class="desc">
+            All spacing — margins, padding, gaps — derives from a single eight-pixel base unit.
+            Half-steps (4px) are allowed only at the smallest scale.
+          </p>
+        </div>
+
+        <div class="space-table">
+          <div class="space-row"><span class="space-name">s-1</span><span class="space-bar" style="width: 4px;"></span><span class="space-px">4px · ½ unit</span></div>
+          <div class="space-row"><span class="space-name">s-2</span><span class="space-bar" style="width: 8px;"></span><span class="space-px">8px · base</span></div>
+          <div class="space-row"><span class="space-name">s-3</span><span class="space-bar" style="width: 12px;"></span><span class="space-px">12px · 1.5×</span></div>
+          <div class="space-row"><span class="space-name">s-4</span><span class="space-bar" style="width: 16px;"></span><span class="space-px">16px · 2×</span></div>
+          <div class="space-row"><span class="space-name">s-5</span><span class="space-bar" style="width: 24px;"></span><span class="space-px">24px · 3×</span></div>
+          <div class="space-row"><span class="space-name">s-6</span><span class="space-bar" style="width: 32px;"></span><span class="space-px">32px · 4×</span></div>
+          <div class="space-row"><span class="space-name">s-7</span><span class="space-bar" style="width: 48px;"></span><span class="space-px">48px · 6×</span></div>
+          <div class="space-row"><span class="space-name">s-8</span><span class="space-bar" style="width: 64px;"></span><span class="space-px">64px · 8×</span></div>
+          <div class="space-row"><span class="space-name">s-9</span><span class="space-bar" style="width: 96px;"></span><span class="space-px">96px · 12×</span></div>
+          <div class="space-row"><span class="space-name">s-10</span><span class="space-bar" style="width: 128px;"></span><span class="space-px">128px · 16×</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Composition examples -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Compositions</div>
+            <h2 class="section-title">Three editorial layouts.</h2>
+          </div>
+          <p class="desc">
+            Each is a starting point — a known-good arrangement of grid, type, and image.
+            Modify the content; do not modify the proportions.
+          </p>
+        </div>
+
+        <div style="display: grid; gap: var(--s-7);">
+          <!-- Comp 1: cover -->
+          <div>
+            <div class="comp">
+              <div style="grid-column: 1 / span 12; aspect-ratio: 16/8; background: url('assets/photos/canyon.jpg') center/cover; position: relative;">
+                <div style="position:absolute; inset:0; background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.55));"></div>
+                <div style="position: absolute; bottom: 8%; left: 6%; right: 6%; display: flex; justify-content: space-between; align-items: end; color: var(--paper);">
+                  <h3 style="font-size: 56px; font-weight: 300; letter-spacing: -0.02em; line-height: 1; max-width: 14ch; color: var(--paper);">A line drawn from the air</h3>
+                  <div style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--grey-85);">VOL. II · 2026</div>
+                </div>
+              </div>
+            </div>
+            <div class="spec-row"><span>Composition · Cover</span><span>12 col · full bleed image</span></div>
+          </div>
+
+          <!-- Comp 2: editorial spread -->
+          <div>
+            <div class="comp">
+              <div style="grid-column: 1 / span 5; aspect-ratio: 4/5; background: url('assets/photos/forest-mist.jpg') center/cover;"></div>
+              <div style="grid-column: 7 / span 5; display: flex; flex-direction: column; justify-content: center;">
+                <div class="eyebrow framed" style="margin-bottom: var(--s-5);">— Sequence 04</div>
+                <h3 style="font-size: 36px; font-weight: 300; letter-spacing: -0.015em; line-height: 1.05; margin-bottom: var(--s-5);">Notes on weather, ground, and the patience of light.</h3>
+                <p style="color: var(--grey-25); max-width: 44ch; font-weight: 300; line-height: 1.55;">The work is divided across four sequences: dunes at first light; the wadi after rain; coastline at dusk; the saltflats, which keep their own time.</p>
+              </div>
+            </div>
+            <div class="spec-row"><span>Composition · Editorial spread</span><span>5 / 1 / 5 — asymmetric</span></div>
+          </div>
+
+          <!-- Comp 3: triptych -->
+          <div>
+            <div class="comp">
+              <div style="grid-column: 1 / span 4; aspect-ratio: 1; background: url('assets/photos/burj-clouds.jpg') center/cover;"></div>
+              <div style="grid-column: 5 / span 4; aspect-ratio: 1; background: url('assets/photos/coastline.jpg') center/cover;"></div>
+              <div style="grid-column: 9 / span 4; aspect-ratio: 1; background: url('assets/photos/reef.jpg') center/cover;"></div>
+            </div>
+            <div class="spec-row"><span>Composition · Triptych</span><span>4 / 4 / 4 — equal weight</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPONENTS DIVIDER -->
+    <section class="section section-divider">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Components</div>
+            <h2 class="section-title">How they behave.</h2>
+          </div>
+          <p class="desc">
+            Buttons, forms, cards, tokens — the working parts of the site. Each follows the
+            typographic discipline rather than the conventions of UI. Restraint scales down to
+            the smallest interaction.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUTTONS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Buttons</div>
+            <h2 class="section-title">Three weights.</h2>
+          </div>
+          <p class="desc">
+            Primary (filled), Secondary (outline), and Tertiary (underline). Always tracked uppercase
+            with a 12px label and a 1.5em hit area.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="ui-card">
+            <div class="ui-stage">
+              <button class="btn btn-primary">Book a session →</button>
+              <button class="btn btn-primary" disabled>Disabled</button>
+            </div>
+            <div class="spec-row"><span>Primary</span><span>btn-primary</span></div>
+          </div>
+          <div class="ui-card">
+            <div class="ui-stage">
+              <button class="btn btn-secondary">View archive</button>
+              <button class="btn btn-secondary" disabled>Disabled</button>
+            </div>
+            <div class="spec-row"><span>Secondary</span><span>btn-secondary</span></div>
+          </div>
+          <div class="ui-card">
+            <div class="ui-stage">
+              <button class="btn btn-tertiary">Read journal</button>
+              <button class="btn btn-tertiary" disabled>Disabled</button>
+            </div>
+            <div class="spec-row"><span>Tertiary</span><span>btn-tertiary</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Forms</div>
+            <h2 class="section-title">Inputs as rules.</h2>
+          </div>
+          <p class="desc">
+            Form fields are a single underline. The label sits above in tracked caps; help text below
+            in monospace. No filled boxes.
+          </p>
+        </div>
+
+        <div class="grid-2" style="gap: var(--s-7);">
+          <form class="form-card" onsubmit="event.preventDefault();">
+            <div class="field">
+              <label>Name</label>
+              <input type="text" placeholder="Your full name" />
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <input type="email" placeholder="you@example.com" />
+              <div class="help">— required</div>
+            </div>
+            <div class="field">
+              <label>Inquiry</label>
+              <select>
+                <option>Editorial commission</option>
+                <option>Print purchase</option>
+                <option>Workshop</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Message</label>
+              <textarea rows="4" placeholder="A few sentences"></textarea>
+            </div>
+            <div class="field-row">
+              <label class="check">
+                <input type="checkbox" />
+                <span class="box"></span>
+                <span>Subscribe to occasional dispatches</span>
+              </label>
+            </div>
+            <div style="display: flex; gap: var(--s-3); margin-top: var(--s-5);">
+              <button class="btn btn-primary" type="submit">Send →</button>
+              <button class="btn btn-tertiary" type="button">Reset</button>
+            </div>
+          </form>
+
+          <div class="form-card" style="background: var(--ink); color: var(--paper);">
+            <div class="eyebrow" style="color: var(--grey-70); margin-bottom: var(--s-5);">— On dark</div>
+            <div class="field dark">
+              <label>Name</label>
+              <input type="text" placeholder="Your full name" />
+            </div>
+            <div class="field dark">
+              <label>Email</label>
+              <input type="email" placeholder="you@example.com" />
+            </div>
+            <div class="field dark">
+              <label>Message</label>
+              <textarea rows="4" placeholder="A few sentences"></textarea>
+            </div>
+            <div style="margin-top: var(--s-5);">
+              <button class="btn btn-primary on-dark" type="button">Send →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDS / NAVIGATION -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Project card</div>
+            <h2 class="section-title">The portfolio unit.</h2>
+          </div>
+          <p class="desc">
+            The recurring container across portfolio listings. A frame, a number, a title,
+            a year, and a single line of metadata.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <a class="proj-card">
+            <div class="proj-frame" style="aspect-ratio:1; background: url('assets/photos/burj-clouds.jpg') center/cover;"></div>
+            <div class="proj-meta">
+              <div class="proj-num">— 01</div>
+              <div class="proj-arrow">→</div>
+            </div>
+            <div class="proj-title">In cloud</div>
+            <div class="proj-sub">Burj Khalifa · 2024</div>
+          </a>
+          <a class="proj-card">
+            <div class="proj-frame" style="aspect-ratio:1; background: url('assets/photos/reef.jpg') center/cover;"></div>
+            <div class="proj-meta">
+              <div class="proj-num">— 02</div>
+              <div class="proj-arrow">→</div>
+            </div>
+            <div class="proj-title">Reef as topology</div>
+            <div class="proj-sub">Aerial series · 2025</div>
+          </a>
+          <a class="proj-card">
+            <div class="proj-frame" style="aspect-ratio:1; background: url('assets/photos/canyon.jpg') center/cover;"></div>
+            <div class="proj-meta">
+              <div class="proj-num">— 03</div>
+              <div class="proj-arrow">→</div>
+            </div>
+            <div class="proj-title">Between walls</div>
+            <div class="proj-sub">AlUla · 2024</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAGS / BADGES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Tags &amp; tokens</div>
+            <h2 class="section-title">Small surfaces.</h2>
+          </div>
+          <p class="desc">
+            Filter tags, status pills, breadcrumbs. Always 24px tall; always tracked uppercase.
+          </p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: var(--s-5); border-top: var(--rule); padding-top: var(--s-5);">
+          <div class="ui-row">
+            <span class="ui-row-label">Tag · default</span>
+            <div class="cluster">
+              <span class="tag">Aerial</span>
+              <span class="tag">Nature</span>
+              <span class="tag">Editorial</span>
+              <span class="tag">Archive</span>
+            </div>
+          </div>
+          <div class="ui-row">
+            <span class="ui-row-label">Tag · selected</span>
+            <div class="cluster">
+              <span class="tag selected">Aerial</span>
+              <span class="tag">Nature</span>
+              <span class="tag">Editorial</span>
+            </div>
+          </div>
+          <div class="ui-row">
+            <span class="ui-row-label">Status</span>
+            <div class="cluster">
+              <span class="tag dot">Available</span>
+              <span class="tag dot grey">Archived</span>
+              <span class="tag dot">Edition · 12 of 25</span>
+            </div>
+          </div>
+          <div class="ui-row">
+            <span class="ui-row-label">Breadcrumb</span>
+            <div class="crumb">
+              <a>Work</a><span>—</span><a>Aerial</a><span>—</span><span>A line drawn from the air</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING -->
+    <section class="section tight" style="padding: 0; border-bottom: var(--rule);">
+      <div style="display: grid; grid-template-columns: 1fr 1fr;">
+        <div class="pad-8" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div class="eyebrow framed" style="margin-bottom: var(--s-6);">— A closing note</div>
+            <h3 class="sub-title" style="max-width: 22ch; margin-bottom: var(--s-5);">Position is meaning.</h3>
+            <p style="color: var(--grey-40); max-width: 48ch;">
+              The grid is the brand's spine, the components are its joints. Both are silent unless
+              they're broken — which is exactly the point.
+            </p>
+          </div>
+          <a href="motion.html" class="cta">Next · Motion →</a>
+        </div>
+        <div style="aspect-ratio: 1 / 1; background: var(--bone); position: relative; overflow: hidden;">
+          <div class="brand-anchor lg"><img src="assets/pattern-corner.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="col-start">© 2026 Moadh Bukhash Photography</div>
+    <div class="col-mid">— Layout —</div>
+    <div class="col-end"><a href="motion.html">Next · Motion →</a></div>
+  </footer>
+</div>
+
+<style>
+  .section-divider {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .section-divider .section-head .num { color: var(--grey-70); }
+  .section-divider .section-head .section-title { color: var(--paper); }
+  .section-divider .section-head .desc { color: var(--grey-85); }
+  .section-divider + .section { padding-top: var(--s-9); }
+
+  /* ——— From Grid page ——— */
+.gridboard {
+    position: relative;
+    border: var(--rule);
+    aspect-ratio: 16/9;
+  }
+  .gb-cols, .gb-overlay {
+    position: absolute;
+    inset: var(--s-7);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+  }
+  .gb-cols span {
+    background: var(--grey-95);
+    height: 100%;
+  }
+  .gb-overlay {
+    grid-template-rows: repeat(4, 1fr);
+    gap: 24px 24px;
+  }
+  .gb-block {
+    background: var(--ink);
+    color: var(--paper);
+    display: grid;
+    place-items: center;
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.06em;
+  }
+
+  .space-table { border-top: var(--rule-ink); }
+  .space-row {
+    display: grid;
+    grid-template-columns: 80px 200px 1fr;
+    align-items: center;
+    gap: var(--s-5);
+    padding: var(--s-4) 0;
+    border-bottom: var(--rule);
+  }
+  .space-name {
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .space-bar { display: block; height: 8px; background: var(--ink); }
+  .space-px {
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.06em;
+    color: var(--grey-55);
+  }
+
+  .comp {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--s-4);
+  }
+
+  /* ——— From UI page ——— */
+/* Buttons */
+  .btn {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 14px 22px;
+    border: 1px solid var(--ink);
+    background: var(--ink);
+    color: var(--paper);
+    cursor: pointer;
+    transition: background 160ms, color 160ms;
+  }
+  .btn-primary { background: var(--ink); color: var(--paper); }
+  .btn-primary:hover { background: var(--grey-25); }
+  .btn-primary[disabled] { background: var(--grey-85); border-color: var(--grey-85); color: var(--grey-55); cursor: not-allowed; }
+  .btn-secondary { background: transparent; color: var(--ink); border-color: var(--ink); }
+  .btn-secondary:hover { background: var(--ink); color: var(--paper); }
+  .btn-secondary[disabled] { color: var(--grey-70); border-color: var(--grey-85); cursor: not-allowed; }
+  .btn-tertiary {
+    background: transparent;
+    color: var(--ink);
+    border: none;
+    border-bottom: 1px solid var(--ink);
+    padding: 4px 0;
+  }
+  .btn-tertiary:hover { color: var(--grey-40); border-color: var(--grey-40); }
+  .btn-tertiary[disabled] { color: var(--grey-70); border-color: var(--grey-85); cursor: not-allowed; }
+  .btn-primary.on-dark { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+  .btn-primary.on-dark:hover { background: var(--grey-85); }
+
+  .ui-card { display: flex; flex-direction: column; gap: var(--s-3); }
+  .ui-stage {
+    border: var(--rule);
+    padding: var(--s-7);
+    aspect-ratio: 4/3;
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-3);
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  /* Forms */
+  .form-card { border: var(--rule); padding: var(--s-7); }
+  .field { margin-bottom: var(--s-5); }
+  .field label {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--grey-55);
+    margin-bottom: 6px;
+  }
+  .field input, .field select, .field textarea {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid var(--ink);
+    background: transparent;
+    font-family: var(--font-sans);
+    font-size: var(--t-body);
+    color: var(--ink);
+    outline: none;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus {
+    border-bottom-color: var(--ink);
+    background: var(--bone);
+  }
+  .field textarea { resize: vertical; }
+  .field .help {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    color: var(--grey-55);
+    margin-top: 4px;
+  }
+  .field.dark label { color: var(--grey-70); }
+  .field.dark input, .field.dark select, .field.dark textarea {
+    color: var(--paper);
+    border-bottom-color: var(--paper);
+  }
+  .field.dark input::placeholder, .field.dark textarea::placeholder { color: var(--grey-55); }
+
+  .check {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-3);
+    cursor: pointer;
+    font-size: var(--t-body);
+  }
+  .check input { display: none; }
+  .check .box {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--ink);
+    display: inline-block;
+    position: relative;
+  }
+  .check input:checked + .box::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: var(--ink);
+  }
+
+  /* Project card */
+  .proj-card { display: flex; flex-direction: column; cursor: pointer; }
+  .proj-frame {
+    aspect-ratio: 1;
+    margin-bottom: var(--s-4);
+    transition: opacity 160ms;
+  }
+  .proj-card:hover .proj-frame { opacity: 0.78; }
+  .proj-card:hover .proj-arrow { transform: translateX(4px); }
+  .proj-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: var(--rule-ink);
+    padding-top: var(--s-3);
+  }
+  .proj-num {
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.12em;
+    color: var(--grey-55);
+  }
+  .proj-arrow { transition: transform 200ms; }
+  .proj-title {
+    font-size: var(--t-h4);
+    font-weight: 400;
+    margin-top: var(--s-2);
+    letter-spacing: -0.005em;
+  }
+  .proj-sub {
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.06em;
+    color: var(--grey-55);
+    margin-top: 4px;
+  }
+
+  /* Tags row */
+  .ui-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: var(--s-5);
+    align-items: center;
+    padding-bottom: var(--s-4);
+    border-bottom: var(--rule);
+  }
+  .ui-row-label {
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.06em;
+    color: var(--grey-55);
+    text-transform: uppercase;
+  }
+  .cluster { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+  .tag {
+    border: 1px solid var(--ink);
+    height: 28px;
+    padding: 0 12px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .tag.selected { background: var(--ink); color: var(--paper); }
+  .tag.dot::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: var(--ink);
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  .tag.dot.grey::before { background: var(--grey-70); }
+
+  .crumb {
+    display: flex;
+    align-items: center;
+    gap: var(--s-3);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .crumb a { color: var(--grey-55); border-bottom: 1px solid transparent; padding-bottom: 2px; cursor: pointer; }
+  .crumb a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+  .crumb span:not(a) { color: var(--grey-70); }
+  .crumb > span:last-child { color: var(--ink); }
+
+  .ph {
+    background:
+      repeating-linear-gradient(135deg, var(--grey-85) 0 1px, transparent 1px 24px),
+      var(--bone);
+    position: relative;
+  }
+  .ph::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: var(--s-3);
+    left: var(--s-3);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    color: var(--grey-55);
+    text-transform: uppercase;
+  }
+</style>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Color — MB Photography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/system.css" />
+</head>
+<body data-page="color" data-group="form">
+
+<div class="site">
+
+  <header class="topbar">
+    <a href="index.html" class="brand">
+      <img src="assets/monogram-black.svg" alt="MB" />
+      <span class="divider"></span>
+      <span class="label">Brand System</span>
+    </a>
+                        <nav class="nav-primary">
+      <a href="index.html" data-page="index">Overview</a>
+      <a href="story.html" data-group="expression">Expression</a>
+      <a href="logo.html" data-group="form">Form</a>
+      <a href="layout.html" data-group="frame">Frame</a>
+      <a href="production.html" data-group="practice">Practice</a>
+    </nav>
+    <span class="meta">— Color</span>
+  </header>
+  <nav class="nav-secondary" data-group="form">
+    <a href="logo.html" data-page="logo">Logo</a>
+    <a href="color.html" data-page="color">Color</a>
+    <a href="type.html" data-page="type">Type</a>
+    <a href="pattern.html" data-page="pattern">Pattern</a>
+    <a href="anchor.html" data-page="anchor">Anchor</a>
+  </nav>
+  <div class="progress"></div>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="stack">
+          <div>
+            <div class="eyebrow framed" style="margin-bottom: var(--s-6);">— Color</div>
+            <h1 class="display">Ink. Paper.<br/>Everything between.</h1>
+          </div>
+          <div>
+            <p class="lead">
+              MB has no chromatic accent. The palette is two anchors and a quiet ramp of nine greys —
+              calibrated against the warmth of paper, not the cold of pure neutral.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANCHORS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Anchors</div>
+            <h2 class="section-title">The two ends.</h2>
+          </div>
+          <p class="desc">
+            Ink and Paper. They appear on every surface, in some ratio. The greys live between them.
+          </p>
+        </div>
+
+        <div class="grid-2" style="gap: var(--s-5);">
+          <div class="anchor" style="background: var(--ink); color: var(--paper);">
+            <div class="anchor-name">Ink</div>
+            <div class="anchor-meta">
+              <div><span class="k">Hex</span><span class="v">#0A0A0A</span></div>
+              <div><span class="k">RGB</span><span class="v">10 · 10 · 10</span></div>
+              <div><span class="k">CMYK</span><span class="v">0 · 0 · 0 · 96</span></div>
+              <div><span class="k">Pantone</span><span class="v">Black 6 C</span></div>
+            </div>
+          </div>
+          <div class="anchor" style="background: var(--paper); color: var(--ink); border: var(--rule);">
+            <div class="anchor-name">Paper</div>
+            <div class="anchor-meta">
+              <div><span class="k">Hex</span><span class="v">#FAFAF7</span></div>
+              <div><span class="k">RGB</span><span class="v">250 · 250 · 247</span></div>
+              <div><span class="k">CMYK</span><span class="v">2 · 1 · 4 · 0</span></div>
+              <div><span class="k">Pantone</span><span class="v">Warm Grey 1 C</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GREY RAMP -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Grey ramp</div>
+            <h2 class="section-title">Nine steps, slightly warm.</h2>
+          </div>
+          <p class="desc">
+            The ramp is biased two degrees toward warm — to harmonize with paper white and with
+            golden-hour photography. Use sparingly: pick one or two steps per surface, never the whole ladder.
+          </p>
+        </div>
+
+        <div class="ramp">
+          <div class="r-cell" style="background: var(--ink); color: var(--paper);">
+            <div class="r-name">Ink</div>
+            <div class="r-hex">#0A0A0A</div>
+            <div class="r-l">L*06</div>
+          </div>
+          <div class="r-cell" style="background: var(--grey-15); color: var(--paper);">
+            <div class="r-name">Grey 15</div>
+            <div class="r-hex">#1A1A18</div>
+            <div class="r-l">L*10</div>
+          </div>
+          <div class="r-cell" style="background: var(--grey-25); color: var(--paper);">
+            <div class="r-name">Grey 25</div>
+            <div class="r-hex">#2D2C28</div>
+            <div class="r-l">L*18</div>
+          </div>
+          <div class="r-cell" style="background: var(--grey-40); color: var(--paper);">
+            <div class="r-name">Grey 40</div>
+            <div class="r-hex">#56554F</div>
+            <div class="r-l">L*36</div>
+          </div>
+          <div class="r-cell" style="background: var(--grey-55); color: var(--paper);">
+            <div class="r-name">Grey 55</div>
+            <div class="r-hex">#807F7B</div>
+            <div class="r-l">L*53</div>
+          </div>
+          <div class="r-cell" style="background: var(--grey-70); color: var(--ink);">
+            <div class="r-name">Grey 70</div>
+            <div class="r-hex">#ABAAA5</div>
+            <div class="r-l">L*70</div>
+          </div>
+          <div class="r-cell" style="background: var(--grey-85); color: var(--ink);">
+            <div class="r-name">Grey 85</div>
+            <div class="r-hex">#D6D5D0</div>
+            <div class="r-l">L*85</div>
+          </div>
+          <div class="r-cell" style="background: var(--grey-95); color: var(--ink);">
+            <div class="r-name">Grey 95</div>
+            <div class="r-hex">#ECEBE6</div>
+            <div class="r-l">L*93</div>
+          </div>
+          <div class="r-cell" style="background: var(--bone); color: var(--ink);">
+            <div class="r-name">Bone</div>
+            <div class="r-hex">#F2F1EC</div>
+            <div class="r-l">L*95</div>
+          </div>
+          <div class="r-cell" style="background: var(--paper); color: var(--ink); border: var(--rule);">
+            <div class="r-name">Paper</div>
+            <div class="r-hex">#FAFAF7</div>
+            <div class="r-l">L*98</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- USAGE / RATIOS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Usage</div>
+            <h2 class="section-title">Ratios, by surface.</h2>
+          </div>
+          <p class="desc">
+            Every surface picks a primary, a secondary, and one accent step from the ramp.
+            Below: the canonical recipes for the three most common contexts.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="recipe">
+            <div class="recipe-bar">
+              <span style="background: var(--paper); flex: 70;"></span>
+              <span style="background: var(--ink); flex: 22;"></span>
+              <span style="background: var(--grey-55); flex: 8;"></span>
+            </div>
+            <div class="recipe-name">Editorial · Light</div>
+            <ul class="recipe-list">
+              <li><b>70%</b> Paper</li>
+              <li><b>22%</b> Ink</li>
+              <li><b>8%</b> Grey 55</li>
+            </ul>
+          </div>
+          <div class="recipe">
+            <div class="recipe-bar">
+              <span style="background: var(--ink); flex: 80;"></span>
+              <span style="background: var(--paper); flex: 12;"></span>
+              <span style="background: var(--grey-55); flex: 8;"></span>
+            </div>
+            <div class="recipe-name">Editorial · Dark</div>
+            <ul class="recipe-list">
+              <li><b>80%</b> Ink</li>
+              <li><b>12%</b> Paper</li>
+              <li><b>8%</b> Grey 55</li>
+            </ul>
+          </div>
+          <div class="recipe">
+            <div class="recipe-bar">
+              <span style="background: var(--bone); flex: 60;"></span>
+              <span style="background: var(--ink); flex: 30;"></span>
+              <span style="background: var(--grey-85); flex: 10;"></span>
+            </div>
+            <div class="recipe-name">Print · Letterhead</div>
+            <ul class="recipe-list">
+              <li><b>60%</b> Bone</li>
+              <li><b>30%</b> Ink</li>
+              <li><b>10%</b> Grey 85</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCESSIBILITY -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Accessibility</div>
+            <h2 class="section-title">Pairings that pass.</h2>
+          </div>
+          <p class="desc">
+            Approved foreground/background pairings, with WCAG contrast ratios. Anything below
+            4.5:1 is reserved for non-text decoration.
+          </p>
+        </div>
+
+        <div class="contrast-grid">
+          <div class="contrast" style="background: var(--paper); color: var(--ink);">
+            <div class="c-sample">Aa</div>
+            <div class="c-spec"><span>Ink / Paper</span><span>19.6 : 1 · AAA</span></div>
+          </div>
+          <div class="contrast" style="background: var(--paper); color: var(--grey-40);">
+            <div class="c-sample">Aa</div>
+            <div class="c-spec"><span>Grey 40 / Paper</span><span>9.1 : 1 · AAA</span></div>
+          </div>
+          <div class="contrast" style="background: var(--paper); color: var(--grey-55);">
+            <div class="c-sample">Aa</div>
+            <div class="c-spec"><span>Grey 55 / Paper</span><span>4.7 : 1 · AA</span></div>
+          </div>
+          <div class="contrast" style="background: var(--ink); color: var(--paper);">
+            <div class="c-sample">Aa</div>
+            <div class="c-spec"><span>Paper / Ink</span><span>19.6 : 1 · AAA</span></div>
+          </div>
+          <div class="contrast" style="background: var(--ink); color: var(--grey-70);">
+            <div class="c-sample">Aa</div>
+            <div class="c-spec"><span>Grey 70 / Ink</span><span>8.4 : 1 · AAA</span></div>
+          </div>
+          <div class="contrast" style="background: var(--ink); color: var(--grey-55);">
+            <div class="c-sample">Aa</div>
+            <div class="c-spec"><span>Grey 55 / Ink</span><span>4.6 : 1 · AA</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAPSULES — named palette extracts grounded in subjects -->
+    <section class="section" style="background: var(--bone);">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Capsules</div>
+            <h2 class="section-title">Four named extracts.</h2>
+          </div>
+          <p class="desc">
+            Each capsule is a four-step extract from the master ramp, named for the subject
+            it tends to live alongside. Capsules govern editorial pairings — they do not
+            replace the master palette.
+          </p>
+        </div>
+
+        <div class="caps-grid">
+
+          <article class="caps-card">
+            <header class="caps-head">
+              <div class="caps-num">01</div>
+              <div class="caps-title">
+                <h3>Concrete &amp; Steel</h3>
+                <p>Architectural sequences, urban negative space, low-key reportage.</p>
+              </div>
+            </header>
+            <div class="caps-strip">
+              <div class="caps-swatch" style="background: #0A0A0A; color: #FAFAF7;"><span>Ink</span><span>#0A0A0A</span></div>
+              <div class="caps-swatch" style="background: #2A2A28; color: #FAFAF7;"><span>Grey 15</span><span>#2A2A28</span></div>
+              <div class="caps-swatch" style="background: #6E6E6A; color: #FAFAF7;"><span>Grey 45</span><span>#6E6E6A</span></div>
+              <div class="caps-swatch" style="background: #B8B8B2; color: #0A0A0A;"><span>Grey 75</span><span>#B8B8B2</span></div>
+            </div>
+          </article>
+
+          <article class="caps-card">
+            <header class="caps-head">
+              <div class="caps-num">02</div>
+              <div class="caps-title">
+                <h3>Shifting Sands</h3>
+                <p>Desert work — Liwa, Empty Quarter, the warm half of the ramp.</p>
+              </div>
+            </header>
+            <div class="caps-strip">
+              <div class="caps-swatch" style="background: #4A4338; color: #FAFAF7;"><span>Sepia 20</span><span>#4A4338</span></div>
+              <div class="caps-swatch" style="background: #857C69; color: #FAFAF7;"><span>Sand 45</span><span>#857C69</span></div>
+              <div class="caps-swatch" style="background: #CDC4B3; color: #0A0A0A;"><span>Sand 75</span><span>#CDC4B3</span></div>
+              <div class="caps-swatch" style="background: #F0EAD8; color: #0A0A0A;"><span>Bone</span><span>#F0EAD8</span></div>
+            </div>
+          </article>
+
+          <article class="caps-card">
+            <header class="caps-head">
+              <div class="caps-num">03</div>
+              <div class="caps-title">
+                <h3>Summit</h3>
+                <p>Hajar mountain ranges, granite atmospherics, high-contrast monochrome.</p>
+              </div>
+            </header>
+            <div class="caps-strip">
+              <div class="caps-swatch" style="background: #0A0A0A; color: #FAFAF7;"><span>Ink</span><span>#0A0A0A</span></div>
+              <div class="caps-swatch" style="background: #3F3F3D; color: #FAFAF7;"><span>Grey 25</span><span>#3F3F3D</span></div>
+              <div class="caps-swatch" style="background: #8E8E89; color: #FAFAF7;"><span>Grey 55</span><span>#8E8E89</span></div>
+              <div class="caps-swatch" style="background: #FAFAF7; color: #0A0A0A; border: 1px solid var(--ink);"><span>Paper</span><span>#FAFAF7</span></div>
+            </div>
+          </article>
+
+          <article class="caps-card">
+            <header class="caps-head">
+              <div class="caps-num">04</div>
+              <div class="caps-title">
+                <h3>Tidelands</h3>
+                <p>Coastal sequences, Musandam &amp; the Gulf, cool grey washes.</p>
+              </div>
+            </header>
+            <div class="caps-strip">
+              <div class="caps-swatch" style="background: #1F2422; color: #FAFAF7;"><span>Slate 12</span><span>#1F2422</span></div>
+              <div class="caps-swatch" style="background: #4F5856; color: #FAFAF7;"><span>Slate 32</span><span>#4F5856</span></div>
+              <div class="caps-swatch" style="background: #8C9694; color: #FAFAF7;"><span>Slate 58</span><span>#8C9694</span></div>
+              <div class="caps-swatch" style="background: #D4DAD8; color: #0A0A0A;"><span>Slate 82</span><span>#D4DAD8</span></div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="caps-rule">
+          <div class="caps-rule-num">i</div>
+          <div>
+            <div class="caps-rule-title">Rule of one</div>
+            <div class="caps-rule-body">
+              A single capsule governs a single edit, brief, or installation. Mixing capsules
+              within one piece is permitted only when the subject itself spans them
+              (a coastline meeting a desert; a mountain seen through a city window).
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="col-start">© 2026 Moadh Bukhash Photography</div>
+    <div class="col-mid">— Color —</div>
+    <div class="col-end"><a href="type.html">Next · Type →</a></div>
+  </footer>
+</div>
+
+<style>
+  .anchor {
+    aspect-ratio: 4/3;
+    padding: var(--s-7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .anchor-name {
+    font-size: clamp(48px, 6vw, 88px);
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .anchor-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-3) var(--s-5);
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.06em;
+  }
+  .anchor-meta .k {
+    display: block;
+    opacity: 0.6;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 4px;
+  }
+
+  .ramp {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1px;
+    background: var(--grey-85);
+    border: var(--rule);
+  }
+  .r-cell {
+    aspect-ratio: 1 / 2.4;
+    padding: var(--s-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.06em;
+  }
+  .r-name {
+    font-size: var(--t-micro);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .r-hex { opacity: 0.7; }
+  .r-l { opacity: 0.5; font-size: 10px; }
+
+  .recipe { border: var(--rule); padding: var(--s-5); }
+  .recipe-bar { display: flex; height: 56px; gap: 0; margin-bottom: var(--s-5); }
+  .recipe-bar span { display: block; height: 100%; }
+  .recipe-name {
+    font-size: var(--t-h4);
+    font-weight: 400;
+    margin-bottom: var(--s-3);
+  }
+  .recipe-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.04em;
+    color: var(--grey-55);
+  }
+  .recipe-list b { color: var(--ink); font-weight: 500; margin-right: 8px; }
+
+  .contrast-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-3); }
+  .contrast {
+    aspect-ratio: 4/3;
+    padding: var(--s-5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid transparent;
+  }
+  .c-sample { font-size: 88px; line-height: 1; font-weight: 300; letter-spacing: -0.02em; }
+  .c-spec {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.06em;
+    opacity: 0.85;
+  }
+
+  /* ────────────────  CAPSULES  ──────────────── */
+  .caps-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-5);
+  }
+  .caps-card {
+    background: var(--paper);
+    border: var(--rule);
+    display: flex;
+    flex-direction: column;
+  }
+  .caps-head {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: var(--s-4);
+    padding: var(--s-6);
+    align-items: start;
+    border-bottom: var(--rule);
+  }
+  .caps-num {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: var(--grey-55);
+    padding-top: 4px;
+  }
+  .caps-title h3 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    margin: 0 0 6px 0;
+    color: var(--ink);
+  }
+  .caps-title p {
+    font-family: var(--font-body);
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--grey-40);
+    font-weight: 300;
+    margin: 0;
+    max-width: 50ch;
+  }
+  .caps-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .caps-swatch {
+    aspect-ratio: 1/1.6;
+    padding: var(--s-4);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    letter-spacing: 0.08em;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+  .caps-swatch span:first-child {
+    font-size: 10.5px;
+    margin-bottom: 4px;
+    opacity: 0.95;
+  }
+  .caps-swatch span:last-child {
+    opacity: 0.6;
+    font-size: 9px;
+  }
+  .caps-rule {
+    margin-top: var(--s-7);
+    padding: var(--s-6);
+    background: var(--paper);
+    border: var(--rule);
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: var(--s-5);
+    align-items: start;
+  }
+  .caps-rule-num {
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    display: grid;
+    place-items: center;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    border-radius: 50%;
+  }
+  .caps-rule-title {
+    font-family: var(--font-display);
+    font-size: var(--t-body);
+    color: var(--ink);
+    margin-bottom: var(--s-2);
+  }
+  .caps-rule-body {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--grey-25);
+    line-height: 1.55;
+    max-width: 80ch;
+    font-weight: 300;
+  }
+  @media (max-width: 900px) {
+    .caps-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

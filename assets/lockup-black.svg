@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" fill="#0A0A0A" shape-rendering="crispEdges">
+  
+  <g transform="translate(310, 0)">
+    <rect x="0" y="45" width="44" height="226"></rect>
+    <rect x="90" y="45" width="44" height="226"></rect>
+    <rect x="180" y="45" width="44" height="226"></rect>
+    <rect x="0" y="45" width="66" height="24"></rect>
+    <rect x="90" y="45" width="66" height="24"></rect>
+    <rect x="180" y="45" width="44" height="24"></rect>
+    <rect x="271" y="0" width="44" height="316"></rect>
+    <rect x="271" y="0" width="306" height="44"></rect>
+    <rect x="271" y="136" width="306" height="44"></rect>
+    <rect x="271" y="272" width="306" height="44"></rect>
+  </g>
+
+  <text x="600" y="450" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="64" font-weight="500" letter-spacing="6">MOADH BUKHASH</text>
+  <line x1="430" y1="540" x2="500" y2="540" stroke="#0A0A0A" stroke-width="3"></line>
+  <line x1="700" y1="540" x2="770" y2="540" stroke="#0A0A0A" stroke-width="3"></line>
+  <text x="600" y="555" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="8">PHOTOGRAPHY</text>
+</svg>

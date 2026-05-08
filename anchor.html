@@ -1,0 +1,1011 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Brand Anchor — MB Photography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/system.css" />
+</head>
+<body data-page="anchor" data-group="form">
+
+<div class="site">
+
+  <header class="topbar">
+    <a href="index.html" class="brand">
+      <img src="assets/monogram-ink.svg" alt="MB" />
+      <span class="divider"></span>
+      <span class="label">Brand System</span>
+    </a>
+                        <nav class="nav-primary">
+      <a href="index.html" data-page="index">Overview</a>
+      <a href="story.html" data-group="expression">Expression</a>
+      <a href="logo.html" data-group="form">Form</a>
+      <a href="layout.html" data-group="frame">Frame</a>
+      <a href="production.html" data-group="practice">Practice</a>
+    </nav>
+    <span class="meta">— Brand Anchor</span>
+  </header>
+  <nav class="nav-secondary" data-group="form">
+    <a href="logo.html" data-page="logo">Logo</a>
+    <a href="color.html" data-page="color">Color</a>
+    <a href="type.html" data-page="type">Type</a>
+    <a href="pattern.html" data-page="pattern">Pattern</a>
+    <a href="anchor.html" data-page="anchor">Anchor</a>
+  </nav>
+  <div class="progress"></div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="stack">
+          <div>
+            <div class="eyebrow framed" style="margin-bottom: var(--s-6);">— Brand Anchor</div>
+            <h1 class="display">A signature<br/>in the corner.</h1>
+          </div>
+          <div>
+            <p class="lead">
+              The corner pattern is fixed to the bottom-right of every format we produce.
+              Letterhead, poster, book cover, certificate, print mat — same place, same proportion,
+              every time. Over years, this becomes the thing people recognize before they read
+              the name.
+            </p>
+            <div class="hero-meta">
+              <div class="meta-block">
+                <div class="k">Position</div>
+                <div class="v">Bottom-right</div>
+              </div>
+              <div class="meta-block">
+                <div class="k">Width</div>
+                <div class="v">28% of format width</div>
+              </div>
+              <div class="meta-block">
+                <div class="k">Bleed</div>
+                <div class="v">Flush to corner</div>
+              </div>
+              <div class="meta-block">
+                <div class="k">Color</div>
+                <div class="v">Ink / paper / mid-grey</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DERIVATION: tile → corner anchor -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">A.0 — Derivation</div>
+            <h2 class="section-title">From the tile, to the corner.</h2>
+          </div>
+          <p class="desc">
+            The anchor is not a new mark — it is the master pattern tile, cascaded
+            into the bottom-right corner. The tile bleeds off both edges; cells thin
+            out as they move up and left, leaving the page open. See the
+            <a href="pattern.html" style="text-decoration: underline;">pattern specification</a>
+            for the underlying tile.
+          </p>
+        </div>
+
+        <div class="derive-row">
+          <figure class="derive-step">
+            <div class="derive-stage" style="padding: 0; overflow: hidden;">
+              <img src="assets/master-tile-default.png" alt="Master pattern tile" style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <figcaption>
+              <span class="ds-num mono">— 01</span>
+              <span class="ds-name">Master tile</span>
+              <span class="ds-meta mono">12 × 12 cells</span>
+            </figcaption>
+          </figure>
+
+          <div class="derive-arrow" aria-hidden="true">→</div>
+
+          <figure class="derive-step">
+            <div class="derive-stage">
+              <!-- Tile, cropped to its dense quadrant + cascaded -->
+              <div class="derive-cascade">
+                <img src="assets/pattern-corner.png" alt="Cascade abstraction" />
+              </div>
+            </div>
+            <figcaption>
+              <span class="ds-num mono">— 02</span>
+              <span class="ds-name">Mass cascaded</span>
+              <span class="ds-meta mono">Density to corner</span>
+            </figcaption>
+          </figure>
+
+          <div class="derive-arrow" aria-hidden="true">→</div>
+
+          <figure class="derive-step">
+            <div class="derive-stage">
+              <div class="derive-page">
+                <div class="anchor-stamp"><img src="assets/pattern-corner.png" alt="" /></div>
+              </div>
+            </div>
+            <figcaption>
+              <span class="ds-num mono">— 03</span>
+              <span class="ds-name">Anchored to format</span>
+              <span class="ds-meta mono">Bottom-right · 28%</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE RULE -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">A.1 — The rule</div>
+            <h2 class="section-title">One position. One proportion.</h2>
+          </div>
+          <p class="desc">
+            The pattern is mirrored from the source artwork so its mass falls
+            into the bottom-right corner. The width is measured as a percentage
+            of the format's shorter edge — never as a fixed millimetre value —
+            so it scales gracefully from a business card to an A0 poster.
+          </p>
+        </div>
+
+        <div class="anchor-rule">
+          <div class="rule-diagram">
+            <div class="rule-page">
+              <div class="rule-corner-stamp" aria-hidden="true">
+                <img src="assets/pattern-corner.png" alt="" />
+              </div>
+              <!-- Measurement guides -->
+              <div class="g-edge g-bottom"><span>0 mm</span></div>
+              <div class="g-edge g-right"><span>0 mm</span></div>
+              <div class="g-width"><span>28% of width</span></div>
+            </div>
+          </div>
+          <div class="rule-notes">
+            <div class="rn">
+              <div class="rn-num mono">— 01</div>
+              <div class="rn-body">
+                <div class="rn-title">Flush to the corner.</div>
+                <p>The pattern bleeds to both the right and bottom edges. No margin, no padding. It anchors the page; it does not float.</p>
+              </div>
+            </div>
+            <div class="rn">
+              <div class="rn-num mono">— 02</div>
+              <div class="rn-body">
+                <div class="rn-title">28% of the shorter edge.</div>
+                <p>Measured from the shorter edge of the format so the proportion stays constant from card to poster. Adjust ±2% at the discretion of the designer; never beyond.</p>
+              </div>
+            </div>
+            <div class="rn">
+              <div class="rn-num mono">— 03</div>
+              <div class="rn-body">
+                <div class="rn-title">Three colorways only.</div>
+                <p>Ink-on-paper (default), paper-on-ink (reverse), or mid-grey on either ground. Never tinted, never gradient, never overprinted.</p>
+              </div>
+            </div>
+            <div class="rn">
+              <div class="rn-num mono">— 04</div>
+              <div class="rn-body">
+                <div class="rn-title">No competing element below.</div>
+                <p>Nothing — text, image, or rule — is allowed in the bottom-right quadrant of the format. The anchor owns that corner alone.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLICATIONS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">A.2 — In the world</div>
+            <h2 class="section-title">Six formats, one anchor.</h2>
+          </div>
+          <p class="desc">
+            Below: every format MB produces, with the corner anchor applied at the same
+            relative size. Notice how the eye finds the same corner on every surface —
+            that's the recognition we're building.
+          </p>
+        </div>
+
+        <!-- Row 1: Letterhead + Poster light -->
+        <div class="grid-2" style="gap: var(--s-7);">
+          <!-- LETTERHEAD A4 -->
+          <div>
+            <div class="fmt-stage">
+              <div class="fmt fmt-a4">
+                <!-- Header -->
+                <div class="fmt-head">
+                  <img src="assets/monogram-black.svg" alt="" class="fmt-mono" />
+                  <div class="fmt-head-meta">
+                    <div>Moadh Bukhash Photography</div>
+                    <div class="mono">— Studio · Dubai</div>
+                  </div>
+                </div>
+                <!-- Body -->
+                <div class="fmt-body">
+                  <div class="mono fmt-date">— 12 May 2026</div>
+                  <p class="fmt-p" style="font-size: 13px;">Dear collaborator,</p>
+                  <p class="fmt-p muted">Please find enclosed the proposal for the editorial commission discussed last week. The scope covers four sequences across the Hajar mountains and the eastern coastline; final delivery is targeted for late autumn.</p>
+                  <p class="fmt-p muted">With thanks for your patience —</p>
+                  <p class="fmt-p" style="margin-top: 28px;">Moadh</p>
+                </div>
+                <!-- Footer -->
+                <div class="fmt-foot">
+                  <span>Studio · Al Quoz, Dubai</span>
+                  <span>info@moadh.com</span>
+                </div>
+                <!-- Anchor -->
+                <div class="anchor-stamp"><img src="assets/pattern-corner.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="spec-row"><span>Letterhead · A4 · 210 × 297 mm</span><span>Anchor · 28% · ink</span></div>
+          </div>
+
+          <!-- POSTER A2 (light) -->
+          <div>
+            <div class="fmt-stage">
+              <div class="fmt fmt-poster">
+                <div class="fmt-poster-img" style="background: url('assets/photos/forest-mist.jpg') center/cover;"></div>
+                <div class="fmt-poster-text">
+                  <div class="eyebrow framed" style="margin-bottom: 14px;">— Solo show · 2026</div>
+                  <h2 class="fmt-poster-h">An archive<br/>of quiet places</h2>
+                  <div class="fmt-poster-foot">
+                    <span>— 12 May → 30 Jun</span>
+                    <span>— Alserkal Avenue · Dubai</span>
+                  </div>
+                </div>
+                <div class="anchor-stamp"><img src="assets/pattern-corner.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="spec-row"><span>Poster · A2 · 420 × 594 mm</span><span>Anchor · 28% · ink</span></div>
+          </div>
+        </div>
+
+        <!-- Row 2: Book cover + Print mat -->
+        <div class="grid-2" style="gap: var(--s-7); margin-top: var(--s-9);">
+          <!-- BOOK COVER -->
+          <div>
+            <div class="fmt-stage dark">
+              <div class="fmt fmt-book">
+                <div class="fmt-book-top">
+                  <div class="eyebrow framed reverse">— Vol. ii</div>
+                  <span class="mono reverse">2026</span>
+                </div>
+                <div class="fmt-book-mid">
+                  <h2 class="fmt-book-h">Notes on weather,<br/>ground, and light.</h2>
+                  <div class="fmt-book-rule"></div>
+                  <div class="mono reverse small">— A photographic monograph by Moadh Bukhash</div>
+                </div>
+                <div class="anchor-stamp reverse"><img src="assets/pattern-corner.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="spec-row"><span>Book cover · 240 × 300 mm</span><span>Anchor · 28% · paper-on-ink</span></div>
+          </div>
+
+          <!-- PRINT MAT — anchor lives ONLY on the paper mat border, never on the photo -->
+          <div>
+            <div class="fmt-stage">
+              <div class="fmt fmt-mat">
+                <div class="fmt-mat-window" style="background: url('assets/photos/canyon.jpg') center/cover;"></div>
+                <div class="fmt-mat-caption">
+                  <div class="mono">— No. 042 · In cloud</div>
+                  <div class="mono small">EDITION 12 / 50</div>
+                </div>
+                <!-- Anchor lives in the bottom-right paper border, NOT on the artwork. -->
+                <div class="anchor-stamp mat-anchor"><img src="assets/pattern-corner.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="spec-row"><span>Print mat · 400 × 500 mm</span><span>Anchor · paper border only</span></div>
+          </div>
+        </div>
+
+        <!-- Row 3: Social square + Certificate -->
+        <div class="grid-2" style="gap: var(--s-7); margin-top: var(--s-9);">
+          <!-- SOCIAL TILE — photograph nested in a paper margin; anchor sits on the paper, not the image. -->
+          <div>
+            <div class="fmt-stage">
+              <div class="fmt fmt-social">
+                <!-- Inner frame: image + caption + paper margin all the way around -->
+                <div class="fmt-social-frame">
+                  <div class="fmt-social-img" style="background: url('assets/photos/burj-clouds.jpg') center/cover;"></div>
+                  <div class="fmt-social-caption">
+                    <span class="mono">— No. 042 · In cloud</span>
+                    <span class="mono">@moadh</span>
+                  </div>
+                </div>
+                <!-- Anchor lives on the bottom-right paper margin — outside the photo. -->
+                <div class="anchor-stamp social-anchor"><img src="assets/pattern-corner.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="spec-row"><span>Social tile · 1080 × 1080</span><span>Anchor · paper margin only</span></div>
+          </div>
+
+          <!-- CERTIFICATE OF AUTHENTICITY -->
+          <div>
+            <div class="fmt-stage">
+              <div class="fmt fmt-cert">
+                <div class="fmt-cert-head">
+                  <img src="assets/monogram-black.svg" alt="" />
+                  <div>
+                    <div class="mono small">— Certificate of authenticity</div>
+                    <div class="fmt-cert-no mono">No. 042 · 12 / 50</div>
+                  </div>
+                </div>
+                <div class="fmt-cert-body">
+                  <h3 class="fmt-cert-h">In cloud</h3>
+                  <div class="mono small muted">— Aerial photograph · pigment print on cotton rag · 2026</div>
+                  <div class="fmt-cert-rule"></div>
+                  <div class="fmt-cert-grid mono">
+                    <div><span class="muted">— Edition</span><span>12 / 50</span></div>
+                    <div><span class="muted">— Format</span><span>400 × 500 mm</span></div>
+                    <div><span class="muted">— Paper</span><span>Hahnemühle Photo Rag</span></div>
+                    <div><span class="muted">— Signed</span><span>MB · 12 May 2026</span></div>
+                  </div>
+                </div>
+                <div class="anchor-stamp"><img src="assets/pattern-corner.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="spec-row"><span>Certificate · A5 · 148 × 210 mm</span><span>Anchor · 28% · ink</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DO / DON'T -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">A.3 — Misuse</div>
+            <h2 class="section-title">What not to do.</h2>
+          </div>
+          <p class="desc">
+            The anchor's recognisability comes entirely from its consistency.
+            These four mistakes break it.
+          </p>
+        </div>
+
+        <div class="dont-grid">
+          <!-- DO -->
+          <div class="dont">
+            <div class="dont-stage do">
+              <div class="dont-page">
+                <div class="anchor-stamp"><img src="assets/pattern-corner.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="dont-label do"><span class="badge">— Do</span><span>Bottom-right, flush, 28%.</span></div>
+          </div>
+
+          <!-- DON'T 1: wrong corner -->
+          <div class="dont">
+            <div class="dont-stage">
+              <div class="dont-page">
+                <div class="anchor-stamp wrong-tl"><img src="assets/pattern-corner.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="dont-label"><span class="badge">— Don't</span><span>Move it to another corner.</span></div>
+          </div>
+
+          <!-- DON'T 2: floating with margin -->
+          <div class="dont">
+            <div class="dont-stage">
+              <div class="dont-page">
+                <div class="anchor-stamp wrong-float"><img src="assets/pattern-corner.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="dont-label"><span class="badge">— Don't</span><span>Float it inside the page.</span></div>
+          </div>
+
+          <!-- DON'T 3: oversized -->
+          <div class="dont">
+            <div class="dont-stage">
+              <div class="dont-page">
+                <div class="anchor-stamp wrong-big"><img src="assets/pattern-corner.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="dont-label"><span class="badge">— Don't</span><span>Scale beyond ±2%.</span></div>
+          </div>
+
+          <!-- DON'T 4: tinted -->
+          <div class="dont">
+            <div class="dont-stage">
+              <div class="dont-page">
+                <div class="anchor-stamp wrong-tint"><img src="assets/pattern-corner.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="dont-label"><span class="badge">— Don't</span><span>Tint the pattern.</span></div>
+          </div>
+
+          <!-- DON'T 5: overlapping content -->
+          <div class="dont">
+            <div class="dont-stage">
+              <div class="dont-page">
+                <div class="dont-text">Lorem ipsum dolor sit amet consectetur — text running into the anchor zone is not allowed.</div>
+                <div class="anchor-stamp"><img src="assets/pattern-corner.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="dont-label"><span class="badge">— Don't</span><span>Let content invade the corner.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="col-start">© 2026 Moadh Bukhash Photography</div>
+    <div class="col-mid">— Brand Anchor —</div>
+    <div class="col-end"><a href="layout.html">Next · Layout →</a></div>
+  </footer>
+</div>
+
+<style>
+  /* ============================================================
+     ANCHOR PAGE — local styles
+     The corner pattern source PNG already cascades correctly into
+     the bottom-right (heavy mass at bottom + right, single tile
+     peeking up-left). Used natively, no flip.
+     ============================================================ */
+
+  /* ============================================================
+     DERIVATION ROW (matches pattern.html)
+     ============================================================ */
+  .derive-row {
+    display: grid;
+    grid-template-columns: 1fr 24px 1fr 24px 1fr;
+    gap: var(--s-5);
+    align-items: stretch;
+  }
+  .derive-step { margin: 0; display: flex; flex-direction: column; gap: var(--s-4); }
+  .derive-stage {
+    background: var(--bone);
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    padding: 12%;
+    overflow: hidden;
+    position: relative;
+  }
+  .derive-stage > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .derive-step figcaption {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: var(--s-3);
+    align-items: baseline;
+    border-top: var(--rule-ink);
+    padding-top: var(--s-3);
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.1em;
+  }
+  .ds-num { color: var(--grey-55); }
+  .ds-name { font-family: var(--font-sans); font-size: var(--t-body); font-weight: 400; letter-spacing: 0; color: var(--ink); }
+  .ds-meta { color: var(--grey-55); }
+  .derive-arrow {
+    align-self: center;
+    font-family: var(--font-mono);
+    color: var(--grey-55);
+    font-size: 24px;
+    margin-bottom: 60px;
+  }
+  /* Cascade abstraction stage — the corner art with reduced contrast,
+     to read as a transitional step */
+  .derive-cascade {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .derive-cascade img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 130%;
+    height: auto;
+    display: block;
+    opacity: 0.92;
+  }
+  /* Anchored-to-format mini preview */
+  .derive-page {
+    width: 78%;
+    aspect-ratio: 210 / 297;
+    background: var(--paper);
+    box-shadow: 0 12px 24px -16px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* The reusable stamp — drops into any positioned format frame */
+  .anchor-stamp {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 28%;
+    pointer-events: none;
+    line-height: 0;
+  }
+  .anchor-stamp img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  /* Reverse colorway — paper on ink */
+  .anchor-stamp.reverse img { filter: invert(1); }
+
+  /* Hero meta — small data block under lead */
+  .hero-meta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--s-5);
+    margin-top: var(--s-7);
+    padding-top: var(--s-5);
+    border-top: var(--rule);
+  }
+  .meta-block .k {
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.12em;
+    color: var(--grey-55);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .meta-block .v {
+    font-size: var(--t-body);
+    color: var(--ink);
+  }
+
+  /* ——— THE RULE diagram ——— */
+  .anchor-rule {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-7);
+    align-items: start;
+  }
+  .rule-diagram {
+    background: var(--bone);
+    padding: var(--s-7);
+    aspect-ratio: 1 / 1;
+    display: grid;
+    place-items: center;
+  }
+  .rule-page {
+    width: 100%;
+    aspect-ratio: 210 / 297;
+    background: var(--paper);
+    box-shadow: 0 24px 40px -24px rgba(0,0,0,0.18);
+    position: relative;
+  }
+  .rule-page .anchor-stamp,
+  .rule-page > div.g-bottom,
+  .rule-page > div.g-right { /* placeholders */ }
+  .rule-page .anchor-stamp {
+    /* re-included so spec annotations sit cleanly */
+  }
+  /* The actual stamp inside diagram */
+  .rule-page::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 28%;
+    aspect-ratio: 1000 / 819; /* matches source PNG */
+    background: url('assets/pattern-corner.png') right bottom / contain no-repeat;
+  }
+  /* Measurement guides */
+  .g-edge {
+    position: absolute;
+    background: var(--ink);
+  }
+  .g-bottom {
+    left: 0;
+    right: 28%;
+    bottom: 0;
+    height: 1px;
+  }
+  .g-right {
+    top: 0;
+    bottom: 28%;
+    right: 0;
+    width: 1px;
+  }
+  .g-edge span {
+    position: absolute;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    color: var(--grey-55);
+    background: var(--paper);
+    padding: 2px 4px;
+  }
+  .g-bottom span { left: 8px; bottom: -8px; }
+  .g-right span { right: -8px; top: 8px; transform: rotate(-90deg); transform-origin: right top; }
+  .g-width {
+    position: absolute;
+    right: 0;
+    bottom: -22px;
+    width: 28%;
+    border-top: 1px dashed var(--grey-55);
+    height: 8px;
+    border-left: 1px dashed var(--grey-55);
+    border-right: 1px dashed var(--grey-55);
+  }
+  .g-width span {
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    color: var(--grey-25);
+    white-space: nowrap;
+  }
+
+  /* Rule notes */
+  .rule-notes { display: flex; flex-direction: column; gap: var(--s-6); }
+  .rn {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: var(--s-5);
+    padding-bottom: var(--s-6);
+    border-bottom: var(--rule);
+  }
+  .rn:last-child { border-bottom: 0; }
+  .rn-num {
+    font-size: var(--t-micro);
+    letter-spacing: 0.12em;
+    color: var(--grey-55);
+  }
+  .rn-title {
+    font-size: var(--t-h4);
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    margin-bottom: 8px;
+  }
+  .rn-body p {
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--grey-25);
+    font-weight: 300;
+    max-width: 48ch;
+  }
+
+  /* ============================================================
+     FORMAT FRAMES
+     ============================================================ */
+  .fmt-stage {
+    background: var(--bone);
+    padding: var(--s-7);
+    display: grid;
+    place-items: center;
+    aspect-ratio: 4 / 5;
+  }
+  .fmt-stage.dark { background: var(--ink); }
+
+  .fmt {
+    width: 100%;
+    height: 100%;
+    background: var(--paper);
+    box-shadow: 0 24px 40px -24px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* — Letterhead A4 — */
+  .fmt-a4 {
+    aspect-ratio: 210 / 297;
+    width: auto;
+    height: 100%;
+    padding: 28px 28px 24px;
+  }
+  .fmt-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--rule);
+    padding-bottom: 12px;
+  }
+  .fmt-mono { width: 24px; height: 24px; }
+  .fmt-head-meta { text-align: right; font-size: 9px; }
+  .fmt-head-meta .mono { font-size: 8px; opacity: 0.7; margin-top: 2px; }
+  .fmt-body { flex: 1; padding-top: 24px; }
+  .fmt-date { font-size: 8.5px !important; margin-bottom: 18px; color: var(--grey-55); }
+  .fmt-p {
+    font-weight: 300;
+    font-size: 10.5px;
+    line-height: 1.6;
+    margin: 0 0 12px 0;
+    max-width: 32ch;
+  }
+  .fmt-p.muted { color: var(--grey-25); font-size: 9.5px; }
+  .fmt-foot {
+    border-top: var(--rule);
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: 7.5px;
+    letter-spacing: 0.06em;
+    color: var(--grey-55);
+    /* leave clear space above the anchor */
+    padding-right: 30%;
+  }
+
+  /* — Poster A2 — */
+  .fmt-poster {
+    aspect-ratio: 420 / 594;
+    width: auto;
+    height: 100%;
+    padding: 24px;
+  }
+  .fmt-poster-img {
+    flex: 1;
+    margin-bottom: 18px;
+    min-height: 0;
+  }
+  .fmt-poster-text {
+    /* leave space for anchor */
+    padding-right: 30%;
+  }
+  .fmt-poster-h {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 0.98;
+    margin: 0 0 14px 0;
+  }
+  .fmt-poster-foot {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: var(--rule);
+    font-family: var(--font-mono);
+    font-size: 8px;
+    letter-spacing: 0.06em;
+    color: var(--grey-55);
+    gap: 16px;
+  }
+
+  /* — Book cover — */
+  .fmt-book {
+    aspect-ratio: 240 / 300;
+    width: auto;
+    height: 100%;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .fmt-book-top { display: flex; justify-content: space-between; align-items: center; }
+  .fmt-book-mid {
+    margin-top: auto;
+    padding-right: 30%;
+  }
+  .fmt-book-h {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 1.0;
+    margin: 0 0 16px 0;
+  }
+  .fmt-book-rule {
+    height: 1px;
+    background: var(--grey-25);
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  .reverse { color: var(--grey-70) !important; }
+  .reverse.framed { color: var(--grey-70); border-color: var(--grey-25); }
+  .small { font-size: 8px !important; }
+
+  /* — Print mat — */
+  .fmt-mat {
+    aspect-ratio: 4 / 5;
+    width: auto;
+    height: 100%;
+    background: var(--bone);
+    /* Wider bottom padding gives the anchor a clear paper border below the artwork. */
+    padding: 28px 28px 28%;
+    position: relative;
+  }
+  .fmt-mat-window {
+    /* Photograph occupies the upper region only — leaves clean paper bottom-right for anchor. */
+    aspect-ratio: 3 / 4;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08);
+  }
+  .fmt-mat-caption {
+    /* Caption sits in the paper margin, left-aligned so it doesn't compete with the anchor. */
+    position: absolute;
+    left: 28px;
+    bottom: 22px;
+    /* Stop well before the anchor zone */
+    right: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: var(--font-mono);
+    font-size: 8px;
+    letter-spacing: 0.06em;
+    color: var(--grey-55);
+  }
+  /* The mat anchor is sized smaller so it sits only on the paper border, never the photo. */
+  .anchor-stamp.mat-anchor {
+    width: 22%;
+  }
+
+  /* — Social tile (paper-margin treatment) —
+     The photograph is nested inside a paper card with a generous bottom
+     margin. The anchor sits on the paper, never on the artwork. */
+  .fmt-social {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: var(--paper);
+    padding: 7% 7% 22%;
+    position: relative;
+  }
+  .fmt-social-frame {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .fmt-social-img {
+    flex: 1;
+    width: 100%;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.06);
+  }
+  .fmt-social-caption {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: 8px;
+    letter-spacing: 0.06em;
+    color: var(--grey-55);
+  }
+  .anchor-stamp.social-anchor {
+    width: 24%;
+  }
+
+  /* — Certificate A5 — */
+  .fmt-cert {
+    aspect-ratio: 148 / 210;
+    width: auto;
+    height: 100%;
+    padding: 22px;
+  }
+  .fmt-cert-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding-bottom: 12px;
+    border-bottom: var(--rule);
+  }
+  .fmt-cert-head img { width: 22px; height: 22px; }
+  .fmt-cert-no { font-size: 11px !important; letter-spacing: 0.06em; margin-top: 2px; color: var(--ink); }
+  .fmt-cert-body { flex: 1; padding-top: 20px; padding-right: 30%; }
+  .fmt-cert-h {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    margin: 0 0 4px 0;
+  }
+  .fmt-cert-rule { height: 1px; background: var(--grey-85); margin: 16px 0; }
+  .fmt-cert-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    font-size: 9px;
+    letter-spacing: 0.06em;
+  }
+  .fmt-cert-grid > div { display: flex; justify-content: space-between; }
+  .muted { color: var(--grey-55); }
+
+  /* ============================================================
+     DO / DON'T
+     ============================================================ */
+  .dont-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--s-5);
+  }
+  .dont-stage {
+    background: var(--bone);
+    padding: var(--s-5);
+    aspect-ratio: 4 / 5;
+    display: grid;
+    place-items: center;
+    border: var(--rule);
+  }
+  .dont-stage.do { border: 1px solid var(--ink); }
+  .dont-page {
+    width: 100%;
+    height: 100%;
+    background: var(--paper);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 12px 24px -16px rgba(0,0,0,0.2);
+  }
+  .dont-text {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    font-size: 9px;
+    line-height: 1.5;
+    color: var(--grey-40);
+    font-weight: 300;
+  }
+  .dont-label {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 11px;
+    color: var(--grey-25);
+  }
+  .dont-label .badge {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    background: var(--grey-95);
+    color: var(--grey-25);
+    padding: 4px 8px;
+    text-transform: uppercase;
+  }
+  .dont-label.do .badge {
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  /* Misuse variants — override anchor positioning */
+  .anchor-stamp.wrong-tl {
+    right: auto; bottom: auto; top: 0; left: 0;
+  }
+  .anchor-stamp.wrong-tl img {
+    transform: scaleX(-1) scaleY(-1); /* flipped to look wrong in top-left */
+  }
+  .anchor-stamp.wrong-float {
+    right: 12%; bottom: 12%;
+  }
+  .anchor-stamp.wrong-big {
+    width: 55%;
+  }
+  .anchor-stamp.wrong-tint img {
+    filter: hue-rotate(180deg) sepia(0.6) saturate(2);
+  }
+
+  /* Responsive */
+  @media (max-width: 1100px) {
+    .derive-row { grid-template-columns: 1fr; }
+    .derive-arrow { transform: rotate(90deg); margin: 0 auto; }
+  }
+  @media (max-width: 900px) {
+    .anchor-rule { grid-template-columns: 1fr; }
+    .hero-meta { grid-template-columns: repeat(2, 1fr); }
+    .dont-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

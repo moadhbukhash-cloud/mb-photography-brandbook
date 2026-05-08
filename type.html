@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Typography — MB Photography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/system.css" />
+</head>
+<body data-page="type" data-group="form">
+
+<div class="site">
+
+  <header class="topbar">
+    <a href="index.html" class="brand">
+      <img src="assets/monogram-black.svg" alt="MB" />
+      <span class="divider"></span>
+      <span class="label">Brand System</span>
+    </a>
+                        <nav class="nav-primary">
+      <a href="index.html" data-page="index">Overview</a>
+      <a href="story.html" data-group="expression">Expression</a>
+      <a href="logo.html" data-group="form">Form</a>
+      <a href="layout.html" data-group="frame">Frame</a>
+      <a href="production.html" data-group="practice">Practice</a>
+    </nav>
+    <span class="meta">— Type</span>
+  </header>
+  <nav class="nav-secondary" data-group="form">
+    <a href="logo.html" data-page="logo">Logo</a>
+    <a href="color.html" data-page="color">Color</a>
+    <a href="type.html" data-page="type">Type</a>
+    <a href="pattern.html" data-page="pattern">Pattern</a>
+    <a href="anchor.html" data-page="anchor">Anchor</a>
+  </nav>
+  <div class="progress"></div>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="stack">
+          <div>
+            <div class="eyebrow framed" style="margin-bottom: var(--s-6);">— Typography</div>
+            <h1 class="display">One voice,<br/>nine sizes.</h1>
+          </div>
+          <div>
+            <p class="lead">
+              The system uses a single typeface family for nearly everything — Inter — paired with
+              JetBrains Mono for technical labels, captions, and timestamps. Restraint is the rule.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAMILIES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Families</div>
+            <h2 class="section-title">Two faces.</h2>
+          </div>
+          <p class="desc">
+            Inter for editorial weight; JetBrains Mono for systems language. The wordmark
+            (custom geometric) is treated as a logo asset, not a font.
+          </p>
+        </div>
+
+        <div class="grid-2" style="gap: var(--s-7);">
+          <div class="face">
+            <div style="font-family: var(--font-sans); font-weight: 300; font-size: 200px; line-height: 0.85; letter-spacing: -0.04em; margin-bottom: var(--s-5);">Aa</div>
+            <div class="face-name">Inter</div>
+            <div class="face-desc">Body, headlines, all running text.</div>
+            <div class="face-weights">
+              <span style="font-weight: 300;">Light · 300</span>
+              <span style="font-weight: 400;">Regular · 400</span>
+              <span style="font-weight: 500;">Medium · 500</span>
+              <span style="font-weight: 600;">Semibold · 600</span>
+            </div>
+            <div class="face-sample">
+              The horizon is a line that the camera cannot cross — only describe.
+            </div>
+          </div>
+          <div class="face">
+            <div style="font-family: var(--font-mono); font-weight: 400; font-size: 160px; line-height: 0.85; letter-spacing: -0.02em; margin-bottom: var(--s-5);">Aa</div>
+            <div class="face-name">JetBrains Mono</div>
+            <div class="face-desc">Captions, metadata, EXIF, timestamps.</div>
+            <div class="face-weights mono-weights">
+              <span style="font-family: var(--font-mono); font-weight: 400;">Regular · 400</span>
+              <span style="font-family: var(--font-mono); font-weight: 500;">Medium · 500</span>
+            </div>
+            <div class="face-sample mono-sample">
+              35.2401° N · 24.4843° E · f/8 · 1/2000s · 35mm · ISO 100
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCALE -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Scale</div>
+            <h2 class="section-title">A measured ladder.</h2>
+          </div>
+          <p class="desc">
+            Eight sizes, geometrically related. Skip steps when establishing hierarchy — never use
+            adjacent steps next to each other; the contrast will be too subtle to read.
+          </p>
+        </div>
+
+        <div class="scale-table">
+          <div class="scale-row">
+            <div class="s-spec"><span class="s-name">Display</span><span class="s-meta">120 / 0.95 · 300</span></div>
+            <div class="s-sample" style="font-size: 96px; font-weight: 300; letter-spacing: -0.02em; line-height: 0.95;">From above.</div>
+          </div>
+          <div class="scale-row">
+            <div class="s-spec"><span class="s-name">H1</span><span class="s-meta">72 / 1.0 · 300</span></div>
+            <div class="s-sample" style="font-size: 64px; font-weight: 300; letter-spacing: -0.02em; line-height: 1;">A still atlas of land</div>
+          </div>
+          <div class="scale-row">
+            <div class="s-spec"><span class="s-name">H2</span><span class="s-meta">48 / 1.05 · 300</span></div>
+            <div class="s-sample" style="font-size: 44px; font-weight: 300; letter-spacing: -0.015em;">Patterns the camera finds from above</div>
+          </div>
+          <div class="scale-row">
+            <div class="s-spec"><span class="s-name">H3</span><span class="s-meta">32 / 1.1 · 400</span></div>
+            <div class="s-sample" style="font-size: 30px; font-weight: 400; letter-spacing: -0.01em;">An archive of quiet places</div>
+          </div>
+          <div class="scale-row">
+            <div class="s-spec"><span class="s-name">H4</span><span class="s-meta">22 / 1.3 · 500</span></div>
+            <div class="s-sample" style="font-size: 22px; font-weight: 500;">Selected works, two thousand twenty-six</div>
+          </div>
+          <div class="scale-row">
+            <div class="s-spec"><span class="s-name">Lead</span><span class="s-meta">18 / 1.5 · 300</span></div>
+            <div class="s-sample" style="font-size: 18px; font-weight: 300; line-height: 1.5; color: var(--grey-25); max-width: 64ch;">A short paragraph of introductory copy. The leading is loose and the weight is light, to invite the eye in without raising its voice.</div>
+          </div>
+          <div class="scale-row">
+            <div class="s-spec"><span class="s-name">Body</span><span class="s-meta">15 / 1.55 · 400</span></div>
+            <div class="s-sample" style="font-size: 15px; line-height: 1.55; max-width: 70ch;">Body copy is set in Inter Regular at fifteen pixels with a fifty-five percent line height. Measure stays between fifty and seventy-five characters per line. Avoid justified text on the web.</div>
+          </div>
+          <div class="scale-row">
+            <div class="s-spec"><span class="s-name">Label</span><span class="s-meta">12 / 1 · 500 · TRACKED</span></div>
+            <div class="s-sample" style="font-size: 12px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase;">Section label · in caps</div>
+          </div>
+          <div class="scale-row">
+            <div class="s-spec"><span class="s-name">Mono</span><span class="s-meta">11 / 1 · 400 · MONO</span></div>
+            <div class="s-sample" style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em; color: var(--grey-55);">— 12 May 2026 · Ras Al Khaimah · 35mm · f/8 · 1/2000s · ISO 100</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAIRINGS / SETTING -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Setting</div>
+            <h2 class="section-title">Editorial pairings.</h2>
+          </div>
+          <p class="desc">
+            Three canonical compositions for headline + body, with the framing rule above.
+            Use these as starting points; do not invent new combinations without need.
+          </p>
+        </div>
+
+        <div class="grid-2" style="gap: var(--s-7);">
+          <div class="pair">
+            <div class="eyebrow framed" style="margin-bottom: var(--s-6);">— Frame · short</div>
+            <h3 style="font-size: 56px; font-weight: 300; letter-spacing: -0.02em; line-height: 1; margin-bottom: var(--s-5);">A line drawn<br/>from the air.</h3>
+            <p style="color: var(--grey-25); font-weight: 300; max-width: 50ch; font-size: 17px; line-height: 1.55;">
+              An aerial photograph is a contour map made by light. The mountain is its own legend; the
+              river writes its own caption.
+            </p>
+            <div class="mono" style="margin-top: var(--s-7); border-top: var(--rule); padding-top: var(--s-3);">— Editorial · poster</div>
+          </div>
+          <div class="pair" style="background: var(--ink); color: var(--paper); padding: var(--s-7);">
+            <div class="eyebrow framed" style="margin-bottom: var(--s-6); color: var(--grey-70);">— Frame · long</div>
+            <h3 style="font-size: 40px; font-weight: 300; letter-spacing: -0.015em; line-height: 1.05; margin-bottom: var(--s-5);">Notes on weather, ground,<br/>and the patience of light.</h3>
+            <p style="color: var(--grey-85); font-weight: 300; max-width: 50ch; font-size: 16px; line-height: 1.6;">
+              Field notes from a season working at altitude. The work is divided across four sequences:
+              dunes at first light; the wadi after rain; coastline at dusk; and the saltflats, which keep
+              their own time.
+            </p>
+            <div class="mono" style="margin-top: var(--s-7); border-top: 1px solid var(--grey-25); padding-top: var(--s-3); color: var(--grey-70);">— Editorial · longform</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="col-start">© 2026 Moadh Bukhash Photography</div>
+    <div class="col-mid">— Type —</div>
+    <div class="col-end"><a href="pattern.html">Next · Pattern →</a></div>
+  </footer>
+</div>
+
+<style>
+  .face {
+    border: var(--rule);
+    padding: var(--s-7);
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1 / 1.05;
+  }
+  .face-name {
+    font-size: var(--t-h3);
+    font-weight: 400;
+    margin-bottom: var(--s-2);
+  }
+  .face-desc { color: var(--grey-40); margin-bottom: var(--s-5); }
+  .face-weights {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-top: var(--rule);
+    padding-top: var(--s-4);
+    margin-top: auto;
+    font-size: 18px;
+  }
+  .face-weights span {
+    display: flex;
+    justify-content: space-between;
+    color: var(--grey-25);
+  }
+  .face-sample {
+    margin-top: var(--s-5);
+    border-top: var(--rule);
+    padding-top: var(--s-4);
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--grey-25);
+    max-width: 36ch;
+  }
+  .mono-sample {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: var(--grey-40);
+  }
+  .mono-weights span { font-family: var(--font-mono); }
+
+  .scale-table {
+    border-top: var(--rule-ink);
+  }
+  .scale-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: var(--s-7);
+    align-items: center;
+    padding: var(--s-5) 0;
+    border-bottom: var(--rule);
+  }
+  .s-spec {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .s-name {
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  .s-meta {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    color: var(--grey-55);
+  }
+  .s-sample { color: var(--ink); }
+
+  .pair { border: var(--rule); padding: var(--s-7); }
+</style>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
