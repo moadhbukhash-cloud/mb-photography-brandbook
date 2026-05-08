@@ -1484,3 +1484,143 @@ h3.sub-title {
 
 /* Closing block helpers */
 .pad-8 { padding: var(--s-8); }
+
+
+/* ============================================================
+   EXPORT TABLE — channel-specific export specs
+   Used on photography.html (stills) and motion.html (motion)
+   ============================================================ */
+
+.export-table {
+  border-top: var(--rule-ink);
+  margin-top: var(--s-7);
+}
+.export-row {
+  display: grid;
+  grid-template-columns: minmax(140px, 1.2fr) minmax(200px, 1.5fr) minmax(120px, 1fr) 2fr;
+  gap: var(--s-6);
+  padding: var(--s-5) 0;
+  border-bottom: var(--rule);
+  align-items: baseline;
+}
+.export-row.export-head {
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: var(--s-3);
+}
+.export-row.export-head > div {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--grey-55);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.export-channel {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+}
+.export-channel small {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--grey-55);
+  font-weight: 400;
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+.export-spec {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  line-height: 1.5;
+}
+.export-spec small {
+  display: block;
+  color: var(--grey-55);
+  margin-top: 2px;
+  letter-spacing: 0.08em;
+}
+.export-format {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--grey-25);
+  text-transform: uppercase;
+}
+.export-note {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--grey-25);
+}
+
+.export-callout {
+  margin-top: var(--s-7);
+  padding: var(--s-6);
+  border: var(--rule);
+  background: var(--bone);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--s-6);
+  align-items: start;
+}
+.export-callout-num {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.export-callout-title {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  margin-bottom: var(--s-3);
+}
+.export-callout-body {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--grey-25);
+}
+
+/* Mobile collapse */
+@media (max-width: 720px) {
+  .export-row {
+    grid-template-columns: 1fr;
+    gap: var(--s-3);
+    padding: var(--s-5) 0;
+  }
+  .export-row.export-head { display: none; }
+  .export-channel::before {
+    content: "Channel · ";
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--grey-55);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .export-spec::before {
+    content: "Spec — ";
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--grey-55);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .export-format::before {
+    content: "Format — ";
+    color: var(--grey-55);
+  }
+  .export-callout {
+    grid-template-columns: 1fr;
+    gap: var(--s-3);
+  }
+}

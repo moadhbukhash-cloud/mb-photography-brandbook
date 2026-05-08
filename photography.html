@@ -294,6 +294,110 @@
       </div>
     </section>
 
+    <!-- CHANNEL EXPORTS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Channel exports</div>
+            <h2 class="section-title">One image, sized for each surface.</h2>
+          </div>
+          <p class="desc">
+            A still does not travel as one file. It is exported once per channel — each with its own aspect, resolution, colour space, and watermark rule. Export from the master TIFF; never re-compress a JPEG.
+          </p>
+        </div>
+
+        <div class="export-table">
+          <div class="export-row export-head">
+            <div>Channel</div>
+            <div>Aspect · Pixels</div>
+            <div>Format</div>
+            <div>Notes</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">Instagram feed<small>4:5 portrait</small></div>
+            <div class="export-spec">1080 × 1350<small>72 ppi · sRGB</small></div>
+            <div class="export-format">JPEG · q90</div>
+            <div class="export-note">The default for capsule reveals. Watermark in lower-right at 0.6 opacity. Caption carries title + capsule + edition number.</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">Instagram carousel<small>1:1 square</small></div>
+            <div class="export-spec">1080 × 1080<small>72 ppi · sRGB</small></div>
+            <div class="export-format">JPEG · q90</div>
+            <div class="export-note">For multi-frame sequences within a capsule. Cover slide is square; subsequent slides may shift to 4:5 — Instagram will crop.</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">Instagram story / reel cover<small>9:16 vertical</small></div>
+            <div class="export-spec">1080 × 1920<small>72 ppi · sRGB</small></div>
+            <div class="export-format">JPEG · q90</div>
+            <div class="export-note">For ephemeral posts and reel thumbnails. Keep the subject within the centre 60% — top/bottom 20% reserved for UI overlay.</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">Web hero<small>moadh.com landing</small></div>
+            <div class="export-spec">2560 × 1440<small>72 ppi · sRGB</small></div>
+            <div class="export-format">JPEG · q85<br/>WebP fallback</div>
+            <div class="export-note">Above-the-fold imagery. Compress aggressively — under 400KB per file. Larger viewports use srcset to step up to 3840 × 2160.</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">Print store grid<small>capsule thumbnails</small></div>
+            <div class="export-spec">1200 × 1500<small>72 ppi · sRGB</small></div>
+            <div class="export-format">JPEG · q88</div>
+            <div class="export-note">Watermarked with discreet wordmark. Loaded lazily; first row eager. Detail view steps up to 2000 px longest edge.</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">Print fulfillment<small>theprintspace delivery</small></div>
+            <div class="export-spec">Native composition<small>300 ppi · Adobe RGB</small></div>
+            <div class="export-format">TIFF · 16-bit<br/>uncompressed</div>
+            <div class="export-note">No watermark. Long-edge sized to the largest sale variant in the edition (typically 60×90 or 90×120 cm). Embeds full metadata + colour profile.</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">OG / social card<small>link previews</small></div>
+            <div class="export-spec">1200 × 630<small>1.91:1 · sRGB</small></div>
+            <div class="export-format">JPEG · q85</div>
+            <div class="export-note">Centre-cropped from the master with a small wordmark overlaid lower-right. One per capsule + one for the home page.</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">Email banner<small>newsletter hero</small></div>
+            <div class="export-spec">1200 × 600<small>72 ppi · sRGB</small></div>
+            <div class="export-format">JPEG · q85</div>
+            <div class="export-note">Under 300KB. Falls back to plain text in dark-mode clients — composition must work without colour.</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">Watermarked share<small>press · features · portfolio</small></div>
+            <div class="export-spec">2048 px longest edge<small>72 ppi · sRGB</small></div>
+            <div class="export-format">JPEG · q90</div>
+            <div class="export-note">Carries the wordmark — "MOADH BUKHASH PHOTOGRAPHY" — at lower-right, 14px / 0.6 opacity. The default for any image leaving the studio that is not a sale.</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">Thumbnail<small>indexes · search · previews</small></div>
+            <div class="export-spec">600 px longest edge<small>72 ppi · sRGB</small></div>
+            <div class="export-format">JPEG · q80</div>
+            <div class="export-note">No watermark — too small for capture, too small for reuse. Used in store grids, blog indexes, search results.</div>
+          </div>
+        </div>
+
+        <div class="export-callout">
+          <div class="export-callout-num">i</div>
+          <div>
+            <div class="export-callout-title">Export hygiene.</div>
+            <div class="export-callout-body">
+              Always export from the master TIFF. Strip GPS metadata before public release; keep title, edition, year, copyright. Run a lint pass — file size, dimensions, colour profile — before publishing. Lossy formats compound; never compress an already-compressed file.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- EDITIONS & FILE NAMING -->
     <section class="section">
       <div class="container">

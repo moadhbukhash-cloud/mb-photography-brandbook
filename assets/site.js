@@ -4,7 +4,7 @@
 // Bump this string when you ship changes. Every page that contains
 // data-version="topbar" or data-version="footer" or data-version="meta"
 // will update automatically — never edit version text in HTML by hand.
-const BRAND_VERSION = "1.1";
+const BRAND_VERSION = "1.2";
 const BRAND_VERSION_DATE = "May 2026";
 // ────────────────────────────────────────────────────────────────
 

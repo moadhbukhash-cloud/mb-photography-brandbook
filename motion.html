@@ -180,6 +180,96 @@
       </div>
     </section>
 
+    <!-- CHANNEL EXPORTS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="num">— Channel exports</div>
+            <h2 class="section-title">One edit, one export per surface.</h2>
+          </div>
+          <p class="desc">
+            Each of the three formats has a primary destination. Export from the master ProRes — never re-encode an already-compressed H.264. Watermark on social only when the edit will be reposted off-account.
+          </p>
+        </div>
+
+        <div class="export-table">
+          <div class="export-row export-head">
+            <div>Channel</div>
+            <div>Aspect · Pixels · Length</div>
+            <div>Codec</div>
+            <div>Notes</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">Instagram Reel<small>9:16 vertical</small></div>
+            <div class="export-spec">1080 × 1920<small>15–60s · 30fps</small></div>
+            <div class="export-format">H.264 · 8–10 Mbps<br/>AAC 128kbps</div>
+            <div class="export-note">The default surface for new motion work. Cover frame chosen at second 02 — never a black frame. Caption opens with the capsule name.</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">Instagram Story<small>9:16 vertical</small></div>
+            <div class="export-spec">1080 × 1920<small>≤15s per card · 30fps</small></div>
+            <div class="export-format">H.264 · 6–8 Mbps<br/>AAC 128kbps</div>
+            <div class="export-note">Repurposed clips from the reel master, not a separate edit. Subject within centre 60% — top/bottom 20% reserved for IG UI.</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">YouTube Shorts<small>9:16 vertical</small></div>
+            <div class="export-spec">1080 × 1920<small>≤60s · 30fps</small></div>
+            <div class="export-format">H.264 · 10 Mbps<br/>AAC 192kbps</div>
+            <div class="export-note">Mirrors the IG Reel cut at higher bitrate — YouTube tolerates more before quality degradation. Title must include capsule name; description carries the still-image link.</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">YouTube long-form<small>16:9 landscape</small></div>
+            <div class="export-spec">3840 × 2160<small>60–180s · 30fps</small></div>
+            <div class="export-format">H.265 · 35–45 Mbps<br/>AAC 256kbps · stereo</div>
+            <div class="export-note">For capsule short films. 4K ProRes master archived locally; H.265 for upload. Chapter markers if length ≥ 90s.</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">Web hero loop<small>moadh.com landing</small></div>
+            <div class="export-spec">1920 × 1080<small>6–12s · 30fps</small></div>
+            <div class="export-format">MP4 H.264 · 4–6 Mbps<br/>WebM VP9 fallback<br/>Silent · no audio track</div>
+            <div class="export-note">Autoplays muted, loops seamlessly. Cut on a still moment so the loop point is invisible. Under 4MB per file. Poster frame loads first.</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">Email signature loop<small>1:1 square</small></div>
+            <div class="export-spec">480 × 480<small>4–6s · 24fps</small></div>
+            <div class="export-format">GIF · ≤2MB<br/>or animated WebP</div>
+            <div class="export-note">Dropped only into rich-format signature variant. Plain-text signature carries no media. Test in dark-mode clients before shipping.</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">Gallery / installation<small>16:9 landscape</small></div>
+            <div class="export-spec">3840 × 2160<small>60–180s · 30fps</small></div>
+            <div class="export-format">ProRes 422 HQ<br/>or DNxHR HQX</div>
+            <div class="export-note">For exhibition projection or large-screen plays. Audio mastered to -14 LUFS. Delivered on hardware drive — never streamed.</div>
+          </div>
+
+          <div class="export-row">
+            <div class="export-channel">Press / partner share<small>matches request</small></div>
+            <div class="export-spec">1920 × 1080 default<small>length per request · 30fps</small></div>
+            <div class="export-format">H.264 · 12 Mbps<br/>AAC 192kbps</div>
+            <div class="export-note">Carries the wordmark in lower-right at 0.6 opacity. Watermarked unless the partner is licensed for an unmarked cut (rare).</div>
+          </div>
+        </div>
+
+        <div class="export-callout">
+          <div class="export-callout-num">i</div>
+          <div>
+            <div class="export-callout-title">Master once, export many.</div>
+            <div class="export-callout-body">
+              The colour grade and the cut live in a single ProRes 422 HQ master at 3840 × 2160 / 30fps. Every channel export is a transcode from that master. Never re-encode an H.264 — quality compounds downward. If a capsule has both vertical and landscape destinations, cut both edits in parallel from the same project, not by reframing one to the other.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- SOUND -->
     <section class="section">
       <div class="container">
