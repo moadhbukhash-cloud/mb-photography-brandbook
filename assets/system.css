@@ -1187,3 +1187,300 @@ h3.sub-title {
 .palette-swatch, .swatch {
   background-clip: padding-box;
 }
+
+
+/* ============================================================
+   PRACTICE PAGE MOCKUPS — restored from applications.html.bak
+   (was inline; never extracted to system.css during v1.1 split)
+   ============================================================ */
+
+/* Common */
+.cta {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 4px;
+  text-decoration: none;
+}
+.cta:hover { color: var(--grey-55); border-bottom-color: var(--grey-55); }
+
+.muted { color: var(--grey-55); }
+
+/* ---------- STATIONERY ---------- */
+
+/* Card stage */
+.card-stage {
+  background: var(--bone);
+  aspect-ratio: 4/3;
+  display: grid;
+  place-items: center;
+  padding: var(--s-7);
+}
+.card-bc, .card-bc-front {
+  width: 80%;
+  aspect-ratio: 85 / 55;
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: 0 24px 40px -24px rgba(0,0,0,0.45);
+  position: relative;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-bc-back {
+  width: 80%;
+  aspect-ratio: 85 / 55;
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: 0 24px 40px -24px rgba(0,0,0,0.45);
+  padding: 18px 22px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 18px;
+  overflow: hidden;
+}
+.bc-monogram { width: 36px; height: 36px; }
+.bc-info { margin-top: 4px; }
+.bc-name { font-size: 14px; font-weight: 500; letter-spacing: -0.005em; color: var(--paper); }
+.bc-role { font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--grey-70); margin-top: 2px; }
+.bc-rule { height: 1px; background: var(--grey-40); margin: 8px 0; }
+.bc-contact {
+  display: flex; justify-content: space-between;
+  font-family: var(--font-mono); font-size: 9px;
+  letter-spacing: 0.06em; color: var(--grey-85);
+}
+.bc-qr {
+  width: 88px; height: 88px;
+  background: var(--paper);
+  background-image:
+    linear-gradient(45deg, var(--ink) 25%, transparent 25%, transparent 75%, var(--ink) 75%),
+    linear-gradient(45deg, var(--ink) 25%, transparent 25%, transparent 75%, var(--ink) 75%);
+  background-size: 8px 8px;
+  background-position: 0 0, 4px 4px;
+}
+.bc-back-label {
+  font-family: var(--font-mono); font-size: 9px;
+  letter-spacing: 0.18em; color: var(--grey-70);
+  text-transform: uppercase;
+}
+
+/* Letterhead */
+.lh-stage { background: var(--bone); padding: var(--s-7); display: grid; place-items: center; }
+.lh-page {
+  width: min(100%, 520px);
+  aspect-ratio: 210/297;
+  background: var(--paper);
+  box-shadow: 0 24px 40px -24px rgba(0,0,0,0.18);
+  padding: 36px 36px 28px;
+  display: flex;
+  flex-direction: column;
+}
+.lh-head {
+  display: flex; justify-content: space-between; align-items: center;
+  border-bottom: var(--rule); padding-bottom: 16px;
+}
+.lh-mono { width: 28px; height: 28px; }
+.lh-meta { text-align: right; font-size: 10px; }
+.lh-meta .mono { font-size: 9px; opacity: 0.7; margin-top: 2px; }
+.lh-body { flex: 1; padding-top: 32px; }
+.lh-date { font-size: 10px !important; margin-bottom: 24px; color: var(--grey-55); }
+.lh-foot {
+  border-top: var(--rule); padding-top: 12px;
+  display: flex; justify-content: space-between;
+  font-family: var(--font-mono); font-size: 9px;
+  letter-spacing: 0.06em; color: var(--grey-55);
+}
+
+/* Thank-you cards */
+.ty-card {
+  aspect-ratio: 1 / 0.7;
+  background: var(--paper);
+  border: var(--rule);
+  padding: var(--s-6);
+  display: flex; flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.ty-front, .ty-inside, .ty-back {
+  display: flex; flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.ty-back { align-items: flex-end; text-align: right; }
+.ty-line { height: 1px; background: var(--grey-25); width: 60px; }
+.ty-mono, .ty-mono-text {
+  font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.08em; color: var(--grey-55);
+  text-transform: uppercase;
+}
+.ty-message {
+  font-size: 14px; line-height: 1.55;
+  font-family: var(--font-sans);
+  color: var(--ink);
+  max-width: 30ch;
+}
+.ty-sig, .ty-sign {
+  font-family: var(--font-sans); font-size: 12px;
+  color: var(--grey-55); letter-spacing: 0.04em;
+}
+.ty-back-label {
+  font-family: var(--font-mono); font-size: 9px;
+  letter-spacing: 0.16em; color: var(--grey-70);
+  text-transform: uppercase;
+}
+
+/* ---------- PACKAGING ---------- */
+.spec-card {
+  border: var(--rule);
+  padding: var(--s-6);
+  background: var(--paper);
+}
+.spec-card-num {
+  font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.1em; color: var(--grey-55);
+  text-transform: uppercase;
+  margin-bottom: var(--s-3);
+}
+.spec-card-name {
+  font-size: 16px; font-weight: 500; letter-spacing: -0.005em;
+  color: var(--ink); margin-bottom: var(--s-3);
+}
+.spec-card-desc {
+  font-size: 13px; line-height: 1.55; color: var(--grey-55);
+}
+
+/* ---------- DIGITAL & EXHIBITION ---------- */
+
+/* Instagram tiles */
+.ig {
+  aspect-ratio: 1080/1350;
+  background: var(--paper);
+  border: var(--rule);
+  display: flex; flex-direction: column;
+  overflow: hidden;
+}
+.ig-img { flex: 1; }
+.ig-quote { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 32px; }
+.ig-text { padding: 24px 24px 0; }
+.ig-foot {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px 24px; border-top: var(--rule);
+  font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.06em; color: var(--grey-55);
+}
+.ig-foot.dark { border-top-color: var(--grey-25); }
+.ig-foot img { width: 22px; height: 22px; }
+
+.edition-stamp {
+  position: absolute; top: 16px; right: 16px;
+  background: rgba(10,10,10,0.85);
+  color: var(--paper);
+  padding: 8px 10px;
+  display: flex; flex-direction: column; gap: 2px;
+  align-items: flex-end;
+}
+.ed-eyebrow {
+  font-family: var(--font-mono); font-size: 8px;
+  letter-spacing: 0.14em; color: rgba(250,250,247,0.7);
+}
+.ed-num {
+  font-family: var(--font-mono); font-size: 11px;
+  letter-spacing: 0.08em; font-weight: 500;
+}
+
+/* Email signature */
+.email-card { border: var(--rule); padding: var(--s-7); background: var(--paper); }
+.sig-plain, .sig-rich { font-family: var(--font-sans); font-size: 13px; line-height: 1.6; }
+.sig-rich { display: flex; gap: 18px; align-items: flex-start; }
+.sig-rich img { width: 44px; height: 44px; }
+.sig-line { line-height: 1.55; }
+.sig-line.muted { color: var(--grey-55); }
+.sig-rule { height: 1px; background: var(--grey-85); width: 220px; margin: 8px 0; }
+.sig-rule.small { width: 160px; }
+
+/* Browser mock */
+.browser {
+  border: var(--rule);
+  background: var(--paper);
+  overflow: hidden;
+}
+.browser-bar {
+  border-bottom: var(--rule);
+  padding: 10px 16px;
+  display: flex; align-items: center;
+  gap: 6px;
+  background: var(--bone);
+}
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--grey-85); }
+.browser-url {
+  margin-left: 16px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--grey-55);
+}
+.browser-body {
+  background: var(--paper);
+}
+.web-top {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 24px 32px;
+  border-bottom: var(--rule);
+}
+.web-top img { width: 28px; height: 28px; }
+.web-nav {
+  display: flex; gap: 24px;
+  font-family: var(--font-sans); font-size: 13px;
+  color: var(--grey-55);
+}
+.web-nav a { cursor: default; }
+.web-nav a.active { color: var(--ink); border-bottom: 1px solid var(--ink); padding-bottom: 2px; }
+.web-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  padding: 64px 32px;
+  align-items: center;
+}
+.web-hero-img {
+  aspect-ratio: 1 / 1.2;
+  width: 100%;
+}
+
+/* Poster */
+.poster {
+  aspect-ratio: 841/1189;
+  background: var(--paper);
+  border: var(--rule);
+  padding: 36px 36px 28px;
+  display: flex; flex-direction: column;
+}
+.poster-img {
+  background: var(--grey-15);
+  margin-bottom: 28px;
+  flex: 1;
+  min-height: 0;
+}
+.poster-text {
+  display: flex; flex-direction: column;
+  gap: var(--s-4);
+}
+.poster-foot {
+  display: flex; justify-content: space-between;
+  border-top: var(--rule);
+  padding-top: 16px;
+  margin-top: var(--s-4);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--grey-55);
+}
+
+/* Closing block helpers */
+.pad-8 { padding: var(--s-8); }
