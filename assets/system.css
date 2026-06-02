@@ -1625,16 +1625,24 @@ h3.sub-title {
   }
 }
 /* ============================================================
-   MEGA-NAV DROPDOWNS — added 2026-06-02
-   JS (site.js :: buildMegaNav) dynamically wraps each group
-   anchor in a .nav-item and appends a .nav-drop panel.
-   No HTML changes required — this activates on every page.
+   MEGA-NAV DROPDOWNS — updated 2026-06-02
+   FIX 1: Gap removed (was top: calc(100% + s-3)) — dropdown now
+           sits flush under the topbar so hover state is continuous.
+           Invisible padding bridge on .nav-item extends the hover
+           target downward so mouse travel to dropdown never breaks.
+   FIX 2: Font forced to Inter everywhere in the panel — previous
+           .nav-drop-group used var(--font-mono) which rendered in
+           JetBrains Mono.
    ============================================================ */
 
 .nav-item {
   position: relative;
   display: flex;
   align-items: center;
+  /* Extend hover area downward — bridges the gap between
+     the topbar link and the dropdown panel */
+  padding-bottom: 12px;
+  margin-bottom: -12px;
 }
 
 /* Subtle down-caret on group labels that have a dropdown */
@@ -1646,15 +1654,16 @@ h3.sub-title {
   margin-left: 1px;
 }
 
-/* The dropdown panel itself — hidden until hover/focus */
+/* The dropdown panel — flush under topbar, no gap */
 .nav-drop {
   display: none;
   position: absolute;
-  top: calc(100% + var(--s-3));
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   background: var(--paper);
   border: var(--rule);
+  border-top: 2px solid var(--ink);
   min-width: 220px;
   z-index: 300;
   box-shadow: 0 16px 32px -8px rgba(10, 10, 10, 0.12);
@@ -1665,25 +1674,25 @@ h3.sub-title {
   display: block;
 }
 
-/* Group label row at top of dropdown */
+/* Group label row at top of dropdown — Inter, not mono */
 .nav-drop-group {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans) !important;
   font-size: 9px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--grey-70);
-  padding: var(--s-3) var(--s-5) var(--s-2);
+  padding: var(--s-4) var(--s-5) var(--s-2);
   border-bottom: var(--rule);
 }
 
-/* Chapter links inside dropdown */
+/* Chapter links inside dropdown — all Inter */
 .nav-drop a {
   display: block;
   padding: var(--s-3) var(--s-5);
   font-family: var(--font-sans) !important;
   font-size: 12px !important;
   font-weight: 500 !important;
-  letter-spacing: 0.08em !important;
+  letter-spacing: 0.06em !important;
   text-transform: uppercase !important;
   color: var(--grey-55) !important;
   border-bottom: 1px solid var(--grey-95) !important;
@@ -1705,14 +1714,17 @@ h3.sub-title {
 
 /* Chapter position indicator in topbar meta */
 .meta-position {
-  font-family: var(--font-mono) !important;
+  font-family: var(--font-sans) !important;
   font-size: var(--t-micro) !important;
-  color: var(--grey-55) !important;
+  font-weight: 500 !important;
   letter-spacing: 0.08em !important;
+  color: var(--grey-55) !important;
 }
 
 /* Mobile: dropdowns hidden — secondary nav already shows group pages */
 @media (max-width: 760px) {
   .nav-drop { display: none !important; }
   .nav-item > a.has-drop::after { content: ""; }
+  .nav-item { padding-bottom: 0; margin-bottom: 0; }
 }
+
