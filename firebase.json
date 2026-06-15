@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "site": "mb-photography-brandbook",
+    "public": ".",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**", "README.md", ".github/**"]
+  }
+}
