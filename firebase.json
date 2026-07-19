@@ -1,7 +1,24 @@
 {
-  "hosting": {
-    "site": "mb-photography-brandbook",
-    "public": ".",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**", "README.md", ".github/**"]
-  }
+  "hosting": [
+    {
+      "site": "mb-photography-brandbook",
+      "public": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**",
+        "README.md",
+        ".github/**"
+      ]
+    },
+    {
+      "site": "mb-photography-prints",
+      "public": "moadh-com",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  ]
 }
